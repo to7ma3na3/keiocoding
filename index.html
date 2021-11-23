@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keio Mosha</title>
+  <script src="https://kit.fontawesome.com/208e85060d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Test</h1>
+
+  <header id="header">
+    <div id="headerContent">
+
+      <p id="headerLogo">
+        <a href="/">
+          <img src="images/logo_01.png" alt="慶應義塾大学病院 Keio University Hospital">
+        </a>
+      </p>
+
+      <div id="menu-open">
+        <img src="images/menu_open.png" alt="menu-button">
+      </div>
+
+      <div id="mobile-menu">
+        <div class="menu-top">
+          <h2>メニュー</h2>
+  
+          <div id="menu-close">
+            <span class="line1"></span>
+            <span class="line2"></span>
+          </div>
+        </div>
+
+        <div id="menu-choose">
+          <form action="/search/" method="get">
+            <input type="hidden" name="imgsize" value="0">
+            <input type="text" name="q" id="headerSearchText" placeholder="サイト内検索" title="サイト内検索" >
+            <input id="search" type="image" src="images/icon_window.png" alt="検索">
+            <ul>
+              <li>inherit</li>
+              <li>masaya</li>
+              <li>takashima masaya</li>
+              <li>契約したメンタ</li>
+            </ul>
+          </form>
+        </div>
+
+        <div id="menu-items">
+          <ul>
+            <li>
+              <a href="">
+                <p>ホーム</p>
+                <!-- <i class="down1 on fas fa-angle-down"> -->
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>お問い合わせ一覧</p>
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>アクセス</p> 
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>サイトマップ</p>
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>ENGLISH</p> 
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>採用情報</p> 
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="pc-menu">
+        <ul id="pc-items">
+          <div class="item1">
+            <li>
+              <a href="">
+                <p>ホーム</p>  
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>お問い合わせ一覧</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>アクセス</p> 
+              </a>
+            </li>
+          </div>
+          <div class="item2">
+            <li>
+              <a href="">
+                <p>サイトマップ</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>ENGLISH</p> 
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>採用情報</p> 
+              </a>
+            </li> 
+          </div>
+        </ul>
+
+        <div id="pc-choose">
+          <form action="/search/" method="get">
+            <input type="hidden" name="imgsize" value="0">
+            <input type="text" name="q" id="pc-SearchText" placeholder="サイト内検索" title="サイト内検索" >
+            <input id="pc-search" type="image" src="images/icon_window.png" alt="検索">
+            <ul>
+              <li>inherit</li>
+              <li>masaya</li>
+              <li>takashima masaya</li>
+              <li>契約したメンタ</li>
+            </ul>
+          </form>
+        </div>
+            
+      </div> 
+
+      <div id="help">
+        <div class="help1">文字　<br>サイズ</div>
+        <a href="">
+          <div class="big">拡大</div>
+        </a>
+        <a href="">
+          <div class="normal">標準</div>
+        </a>
+        <div class="help2">背景変更</div>
+        <a href="">
+          <div class="black">黒</div>
+        </a>
+      </div>
+        
+    </div>
+      
+
+    <section id="main-menu">
+      <ul class="items">
+        <li class="item" id="rainyuin1">
+          <a href="#">
+            <p>来院・入院の方</p>
+            <p><i class="down1 on fas fa-angle-down"></i></p>
+            <p><i class="up1 fas fa-angle-up"></i></p>
+          </a>
+        </li>
+        <li class="item" id="keiougijuku-ni1">
+          <a href="#" >
+            <p class="sp">慶應義塾大学<br>病院について</p>
+            <p class="else">慶應義塾大学病院について</p>
+            <p><i class="down2 on fas fa-angle-down"></i></p>
+            <p><i class="up2 fas fa-angle-up"></i></p>
+          </a>
+        </li>
+        <li class="item" id="iryoukankei1">
+          <a href="#" >
+            <p>医療関係の方</p>
+            <p><i class="down3 on fas fa-angle-down"></i></p>
+            <p><i class="up3 fas fa-angle-up"></i></p>
+          </a>
+        </li>
+      </ul>    
+      
+      <div class="menu-content" id="rainyuin2">
+        <div class="left part">
+          <h3>病院へ行く</h3>
+          <ul class="byouinheiku">
+            <a href="">
+              <li>始めて受診する方
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>通院中・再来の方
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>入院・面会の方
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>人間ドックを受診する方
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="center part">
+          <h3>調べる</h3>
+          <ul class="shiraberu">
+            <a href="">
+              <li>診療科・部門一覧
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>病名・医師名検索
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>役割・機能
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>健康・医療情報（KOMPAS)
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="right part">
+          <h3>問い合わせ</h3>
+          <ul class="toiawase">
+            <a href="">
+              <li>地図・フロア図
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>院内施設のご案内
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>よくあるお問い合わせ
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>お問い合わせ一覧
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="top">
+          <a  class="close" href="">来院・入院の方トップ</a>
+          <a href="">
+            <img src="images/btn_close_01.png" alt="閉じる" width="20px">
+          </a>
+        </div>
+      </div> 
+    
+      <div class="menu-content" id="keiougijuku-ni2">
+        <div>
+          <h3>基本情報</h3>
+          <ul class="kihonjouhou">
+            <a href="">
+              <li>病院概要
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>診療科・部門一覧
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>統計・実績デーデータ
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>理念・行動指針
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div>
+          <h3>取り組み</h3>
+          <ul class="torikumi">
+            <a href="">
+              <li>知ってほしい慶応義塾大学病院
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>病院紹介
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>病院広報誌「すゝめ
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>寄付のお願い
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div>
+          <h3>調べる</h3>
+          <ul class="shiraberu">
+            <a href="">
+              <li>公開講座・社会連携講座
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>取材について
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>お問い合わせ一覧
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div></div>
+        <div class="top">
+          <a href="">慶応義塾大学病院についてのトップ</a>
+          <a href="">
+            <img class="close" src="images/btn_close_01.png" alt="閉じる">
+          </a>
+        </div>
+      </div> 
+      
+      <div class="menu-content" id="iryoukankei2">
+        <div>
+          <h3>紹介する</h3>
+          <ul class="shoukaisuru">
+            <a href="">
+              <li>患者さんの紹介について
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>診療科・部門一覧
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>病名・医師名検索
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>医療連携について
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div>
+          <h3>学ぶ・働く</h3>
+          <ul class="namabuhataraku">
+            <a href="">
+              <li>採用情報
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>研修医・専修医について
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>ボランティア募集
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>医学部・医学研究科
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div>
+          <h3>調べる</h3>
+          <ul class="shiraberu">
+            <a href="">
+              <li>治験・臨床試験情報
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>統計・実績データ
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>よくあるお問い合わせ
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+            <a href="">
+              <li>お問い合わせ一覧
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="top">
+          <a href="">医療関係の方のトップ</a>
+          <a href="">
+            <img class="close" src="images/btn_close_01.png" alt="閉じる">
+          </a>
+        </div>
+      </div> 
+    </section>
+
+  </header>
+
+  <section class="main-pic">
+
+    <div class="swiper-container mySwiper">
+      <!-- <ul class="swiper-wrapper">
+        <li style="display: none; margin-left: 0px; position: absolute; height: 126px;" class>
+          <a href="">
+            <img class="mainvisual pc" src="images/JP_SP001(hitoniyasashii).jpg" alt="次世代への継承">
+          </a>
+        </li> -->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="">
+            <img class="mainvisual sp" src="images/JP_SP001(hitoniyasashii).jpg" alt="次世代への継承">
+            <img class="mainvisual pc" src="images/jp-mv_03_pc_20161011.png" alt="次世代への継承">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="">
+            <img class="mainvisual sp" src="images/JP_SP004(sougouryoku).jpg" alt="総合力による最適な診断治療">
+            <img class="mainvisual pc" src="images/jp-mv_04_pc_20161011.png" alt="総合力による最適な診断治療">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="">
+            <img class="mainvisual sp" src="images/JP_SP005(sekaiwo).jpg" alt="世界をリードする医学・医療の推進">
+            <img class="mainvisual pc" src="images/jp-mv_05_pc_20161011.png" alt="世界をリードする医学・医療の推進">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="">
+            <img class="mainvisual sp" src="images/JP_SP006(keioigaku).jpg" alt="慶應医学の志を受け継ぐ">
+            <img class="mainvisual pc" src="images/jp-mv_06_pc_20161011.png" alt="慶應医学の志を受け継ぐ">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="">
+            <img class="mainvisual sp" src="images/JP_SP007(tayoreru).jpg" alt="頼れる医師、安心・安全な医療体制">
+            <img class="mainvisual pc" src="images/jp-mv_07_pc_20161011.png" alt="頼れる医師、安心・安全な医療体制">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="">
+            <img class="mainvisual sp" src="images/img_feature_04.jpg" alt="新病棟（１号館）の開院">
+            <img class="mainvisual pc" src="images/jp-mv_05_pc_20161011-2.png" alt="新病棟（１号館）の開院">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="">
+            <img class="mainvisual sp" src="images/JP_SP001(hitoniyasashii).jpg" alt="人にやさしい医療を目指して">
+            <img class="mainvisual pc" src="images/jp-mv_01_pc_20161011.png" alt="人にやさしい医療を目指して">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="">
+            <img class="mainvisual sp" src="images/JP_SP002(taisetunamirai).jpg" alt="大切な未来を守るために">
+            <img class="mainvisual pc" src="images/jp-mv_02_pc_20161011.png" alt="大切な未来を守るために">
+          </a>
+        </div>
+      </div>
+      <!-- <div class="swiper-pagination"></div> -->
+      <div class="swiper-button-prev"><p>&lt;</p></div>
+      <div class="swiper-button-next"><p>&gt;</p></div>
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+  </section>
+
+  <section class="sec1 importantInfo">
+    <div class="container">
+      <div class="pink">
+        <h2><span>!</span>　大切なお知らせ</h2> 
+      </div>
+      <ul>
+        <dl>
+          <li>
+            <dt>
+              <span>2021年10月01日</span> 
+            </dt>
+            <dd>
+              <a href="">新型コロナウイルスに関するお知らせ（お知らせまとめ）</a> 
+            </dd>
+          </li>
+          <li>
+            <dt>
+              <span>2021年08月02日</span> 
+            </dt>
+            <dd>
+              <a href="">正面玄関移転に関するお知らせ（お知らせまとめ）</a> 
+            </dd>
+          </li>
+          <li>
+            <dt>
+              <span>2021年03月25日</span> 
+            </dt>
+            <dd>
+              <a href="">＜来院される皆様へ＞感染対策についてのお願い</a> 
+            </dd>         
+          </li>     
+        </dl>
+      </ul>
+    </div>
+  </section>
+
+  
+  <section class="sec2 cases">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="" class="case1">
+            <div>
+              <p>初めて受診する方</p> 
+              <img src="images/img_purpose_01.png" alt="">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="case1">
+            <div>
+              <p>通院・再来の方</p> 
+              <img src="images/img_purpose_02.png" alt="">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="case1">
+            <div>
+              <p>入院・面会の方</p> 
+              <img src="images/img_purpose_03.png" alt="">
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="case1">
+            <div>
+              <p>人間ドック</p> 
+              <img src="images/img_purpose_04.png" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec3 sect">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="">
+            診療科・部門一覧
+          </a>
+        </li>
+        <li>
+          <a href="">
+            医師・病名検索 
+          </a>
+        </li>
+        <li>
+          <a href="">
+            地図・フロア図 
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="sec4 busi-info">
+    <dl class="tabBar">
+      <div class="tab bar1">   
+          <dt class="current on cur1" data-id="bar1">
+            病院からのお知らせ
+          </dt>
+          <dd class="content on con1" id="bar1">
+            <ul>
+              <li>
+                <div class="block1">
+                  <span class="date">2021年11月05日<span class="icon info">お知らせ</span></span> 
+                </div>
+                <div class="block2">
+                  <a href="/oshirase/hosp/detail/40260/">【12月3日（金）までにご予約がある患者さん対象】電話診療等による処方箋発行について</a>
+                </div>
+              </li>
+              <li>
+                <div class="block1">
+                  <span class="date">2021年11月01日<span class="icon info">お知らせ</span></span> 
+                  
+                </div>
+                <div class="bloxk2 pdf">
+                  <a href="">
+                    初診診療担当医表を更新しました。
+                    <img src="images/icon_pdf.png" alt="pdfアイコン">
+                  </a>
+                </div>
+              </li>
+              <li>
+              <div class="block1">
+                <span class="date">2021年10月29日<span class="icon info">お知らせ</span></span>  
+              </div>
+              <div class="block2">
+                <a href="">2021年度インフルエンザワクチン接種のお知らせ</a>
+              </div>
+            </li>
+            <li>
+              <div class="block1">
+                <span class="date">2021年10月25日<span class="icon info">お知らせ</span></span> 
+              </div>
+              <div class="block2">
+                <a href="">2022年の外来診療日に関するお知らせ</a>
+              </div>
+            </li>
+            <li>
+              <div class="block1">
+                <span class="date">2021年10月01日<span class="icon info">お知らせ</span></span>
+              </div>
+              <div class="block2 pdf">
+                <a href="">
+                  初診診療担当医表を更新しました。
+                  <img src="images/icon_pdf.png" alt="pdfアイコン">
+                </a>
+              </div>
+            </li>
+          </ul>
+          <p class="linkBa">
+            <a href="/oshirase/hosp/">
+              病院からのお知らせ一覧
+            </a>
+          </p>
+        </dd>  
+      </div>
+      
+      <div class="tab bar2">
+        <dt class="current cur2" data-id="bar2">
+          医療関係の方へのお知らせ
+        </dt>
+        <dd class="content con2" id="bar2">
+          <ul class="listNewsBa">
+            <li>
+              <div class="block1">
+                <span class="date">2021年11月01日<span class="icon info">お知らせ</span></span> 
+              </div>
+              <div class="block2">
+                <a href="">
+                  2021年11月初診診療担当医表。
+                  <img src="images/icon_pdf.png" alt="pdfアイコン">
+                </a>           
+              </div>
+            </li>
+            <li>
+              <div class="block1">
+                <span class="date">2021年10月01日<span class="icon info">お知らせ</span></span> 
+              </div>
+              <div class="block2">
+                <a href="">
+                  2021年10月初診診療担当医表。
+                  <img src="images/icon_pdf.png" alt="pdfアイコン">
+                </a>           
+              </div>
+            </li>
+            <li>
+              <div class="block1">
+                <span class="date">2021年04月07日<span class="icon event">イベント</span></span> 
+              </div>
+              <div class="block2">
+                <a href="">
+                  Keio Medical Alliance Fellowship Program 全体説明会（慶應オープンホスピタル2021）のWeb開催について
+                  <img src="images/icon_window.png" alt="アイコン">
+                </a>           
+              </div>
+            </li>
+            <li>
+              <div class="block1">
+                <span class="date">2019年05月10日<span class="icon event">イベント</span></span> 
+              </div>
+              <div class="block2">
+                <a href="">
+                  6月8日（土） 研修医・医学部生を対象とする説明会イベント「慶應オープンホスピタル」を開催します。
+                  <img src="images/icon_window.png" alt="アイコン">
+                </a>           
+              </div>
+            </li>
+            <li>
+              <div class="block1">
+                <span class="date">2018年06月21日<span class="icon info">お知らせ</span></span> 
+              </div>
+              <div class="block2">
+                <a href=""> ｢慶應オープンホスピタル2018｣を開催しました </a>           
+              </div>
+            </li>
+          </ul>
+          <p class="linkBa tRight">
+            <a href="/oshirase/iryo/">医療関係の方へのお知らせ一覧</a>
+          </p>    
+        </dd>
+      </div>
+      
+      <div class="tab bar3">
+        <dt class="current cur3" data-id="bar3">
+          採用情報
+        </dt>
+        <dd class="content con3" id="bar3">
+          <ul class="listNewsBa iconNone">
+            <li>
+              <div class="block">
+                <a href="http://www.hosp.keio.ac.jp/iryo/saiyo/" target="_blank">
+                  採用情報についてはこちらのページからご確認ください。
+                  <img src="images/icon_window.png" alt="アイコン">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </dd>
+      </div>
+      
+    </dl>
+    <div class="container">
+    </div>
+  </section>
+  
+  
+  <section class="sec5 task">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="">
+            <div>
+              <img src="images/img_feature_07.jpg" alt="">
+              <span>情報公開について</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div>
+              <img src="images/img_feature_08.jpg" alt="">
+              <span>臨床研究推進センター <img src="images/icon_window.png" alt="アイコン"></span> 
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href=""> 
+            <div>
+              <img src="images/img_feature_09.jpg" alt="">
+              <span>慶應義塾大学 医学部・医学研究科 <img src="images/icon_window.png" alt="アイコン"></span>           
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div>
+              <img src="images/img_feature_01.jpg" alt="">
+              <span>さまざまな連携による最適な医療の実践</span> 
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div>
+              <img src="images/img_feature_02.jpg" alt="">
+              <span>知ってほしい慶應義塾大学病院</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div>
+              <img src="images/img_feature_03.jpg" alt="">
+              <span>新しい医療への取り組み</span>        
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div>
+              <img src="images/img_feature_04.jpg" alt="">
+              <span>新病院棟（1号館）について</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div>
+              <img src="images/img_feature_05.jpg" alt="">
+              <span>医療・健康情報（KOMPAS） <img src="images/icon_window.png" alt="アイコン"></span>      
+              
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div>
+              <img src="images/img_feature_06.jpg" alt="">
+              <span>医療人の育成</span>        
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div>
+              <img src="images/img_feature_06.jpg" alt="">
+              <span>医療人の育成</span>        
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="sec6 on-work">
+    <div class="container">
+
+      <div class="container1">
+        <div class="inner inner1">
+          <div class="theme">
+            <h3><img src="images/icon_window.png" alt="アイコン">  住所・電話</h3>
+          </div>
+          <div class="detail">
+            <p>〒160-8582 東京都新宿区信濃町35</p>
+            <p>03-3353-1211（代表）</p>
+          </div>
+        </div>
+
+        <div class="inner inner2">
+          <div class="theme">
+            <h3><img src="images/icon_window.png" alt="アイコン">  診療受付</h3>
+          </div>
+          <div class="detail">
+            <p>午前8時40分～午前11時00分</p>
+          </div>
+        </div>
+
+        <div class="inner inner3">
+          <div class="theme">
+            <h3><img src="images/icon_window.png" alt="アイコン">  正面玄関開錠</h3>
+          </div>
+          <div class="detail">
+            <p>診療日：午前7時45分～午後7時00分</p>
+            <p>休診日：午後1時00分～午後7時00分</p>
+            <p>（指定の時間以外は出入口を閉鎖）</p>
+          </div>
+        </div>
+
+        <div class="inner inner4">
+          <div class="theme">
+            <h3><img src="images/icon_window.png" alt="アイコン">  休診日</h3>
+          </div>
+          <div class="detail">
+            <p>日曜日・第1・3土曜日</p>
+            <p>国民の祝日・休日</p>
+            <p>年末年始（12/30～1/4）</p>
+            <p>慶應義塾の休日（1/10）</p>
+          </div>
+        </div>
+      </div>
+        
+      <div class="container2">
+        <div class="map">
+          
+          <div class="raiin yoyaku">予約について
+            <canvas class="a1" width="20" height="20">
+              Canvas not supported.
+            </canvas>
+          </div>
+          
+          <div class="raiin henkou">予約変更・確認
+            <canvas class="a2" width="20" height="20">
+              Canvas not supported.
+            </canvas>
+          </div>
+          
+          <img src="images/top_map.png" alt="">
+
+          <div class="raiin access">
+            <p>アクセスについて</p> 
+            <canvas class="a3" width="20" height="20">
+              Canvas not supported.
+            </canvas>
+          </div>
+          
+          <div class="raiin floor">フロアマップ
+            <canvas class="a4" width="20" height="20">
+              Canvas not supported.
+            </canvas>
+          </div>
+          
+          <div class="raiin shisetsu">院内施設一覧
+            <canvas class="a5" width="20" height="20">
+              Canvas not supported.
+            </canvas>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+  <section class="sec7">
+    
+    <div class="container">
+      <div class="swiper-container yourSwiper"> 
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <img src="images/bnr_footer_01.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="images/bnr_footer_02.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="images/bnr_footer_04.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="images/bnr_footer_05.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="images/bnr_footer_06.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="images/bnr_footer_07.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="images/bnr_footer_08.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="images/bnr_footer_09.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="images/bnr_footer_10.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="images/bnr_footer_11.png" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="images/bnr_footer_12.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-prev">
+          <img src="images/btn_prev_01.png" alt="巻き戻し">
+        </div>
+        <div class="swiper-button-next">
+          <img src="images/btn_next_01.png" alt="先送り">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+
+  <footer>
+    <div class="outer">
+      <div class="container">
+        <div>
+          <a href="">このサイトについて</a>
+        </div>
+        <div>
+          <a href="">プライバシーポリシー</a>
+        </div>
+        <div>
+          <a href="">お問い合わせ一覧</a>
+        </div>
+        <div>
+          <a href="">ご寄付のお願い</a>
+        </div>
+      </div>
+      <div class="copy">
+        <span>Copyright (C） Keio University All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      // centeredSlides: true,
+
+      loop: true,
+      effect: 'fade',
+      transitionTimingFunction: 'easeInOut',
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        // },
+    });
+  </script>
+
+<script>
+  var swiper = new Swiper(".yourSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    // centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // scrollbar: {
+    //   el: ".swiper-scrollbar",
+    // },
+
+  });
+</script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+<!-- 前の画像へ戻る
+  
+  慶應義塾
+  慶應義塾大学医学部・医学研究科
+  慶應義塾大学看護医療学部
+  慶應義塾大学薬学部・薬学研究科
+  慶應義塾大学病院看護部
+  慶應義塾大学病院臨床研究推進センター
+  慶應義塾大学病院臨床研究監理センター
+  慶應義塾大学病院 腫瘍センター ゲノム医療ユニット
+  慶應義塾大学医学部三四会医学部同窓会Keio University School of Medecine, Sanshikai
+  慶應義塾大学関連病院会
+  慶應義塾大学病院治験事務局
+  慶應義塾
+  慶應義塾大学医学部・医学研究科
+  慶應義塾大学看護医療学部
+  慶應義塾大学薬学部・薬学研究科
+  慶應義塾大学病院看護部
+  慶應義塾大学病院臨床研究推進センター
+  慶應義塾大学病院臨床研究監理センター
+  慶應義塾大学病院 腫瘍センター ゲノム医療ユニット
+  次の画像へ進む -->
