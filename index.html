@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Keio Mosha</title>
   <script src="https://kit.fontawesome.com/208e85060d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Test</h1>
+  <div class="above">
+    <h1>Test</h1>
+  </div>
 
   <header id="header">
     <div id="headerContent">
@@ -40,7 +43,7 @@
           <form action="/search/" method="get">
             <input type="hidden" name="imgsize" value="0">
             <input type="text" name="q" id="headerSearchText" placeholder="サイト内検索" title="サイト内検索" >
-            <input id="search" type="image" src="images/icon_window.png" alt="検索">
+            <input id="search" type="image" src="http://www.hosp.keio.ac.jp/common/images/search_01.png" alt="検索">
             <ul>
               <li>inherit</li>
               <li>masaya</li>
@@ -135,7 +138,7 @@
           <form action="/search/" method="get">
             <input type="hidden" name="imgsize" value="0">
             <input type="text" name="q" id="pc-SearchText" placeholder="サイト内検索" title="サイト内検索" >
-            <input id="pc-search" type="image" src="images/icon_window.png" alt="検索">
+            <input id="pc-search" type="image" src="http://www.hosp.keio.ac.jp/common/images/search_01.png" alt="検索">
             <ul>
               <li>inherit</li>
               <li>masaya</li>
@@ -163,7 +166,6 @@
         
     </div>
       
-
     <section id="main-menu">
       <ul class="items">
         <li class="item" id="rainyuin1">
@@ -191,248 +193,253 @@
       </ul>    
       
       <div class="menu-content" id="rainyuin2">
-        <div class="left part">
-          <h3>病院へ行く</h3>
-          <ul class="byouinheiku">
-            <a href="">
-              <li>始めて受診する方
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>通院中・再来の方
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>入院・面会の方
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>人間ドックを受診する方
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-          </ul>
+        <div class="joudan">
+          <div class="left part">
+            <h3>病院へ行く</h3>
+            <ul class="byouinheiku">
+              <a href="http://www.hosp.keio.ac.jp/annai/raiin/syoshin/">
+                <li>始めて受診する方
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="http://www.hosp.keio.ac.jp/annai/raiin/syoshin/">
+                <li>通院中・再来の方
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>入院・面会の方
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>人間ドックを受診する方
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="center part">
+            <h3>調べる</h3>
+            <ul class="shiraberu">
+              <a href="#">
+                <li>診療科・部門一覧
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>病名・医師名検索
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>役割・機能
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>健康・医療情報（KOMPAS)
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="right part">
+            <h3>問い合わせる</h3>
+            <ul class="toiawase">
+              <a href="#">
+                <li>地図・フロア図
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>院内施設のご案内
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>よくあるお問い合わせ
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>お問い合わせ一覧
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
-        <div class="center part">
-          <h3>調べる</h3>
-          <ul class="shiraberu">
-            <a href="">
-              <li>診療科・部門一覧
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>病名・医師名検索
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>役割・機能
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>健康・医療情報（KOMPAS)
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-          </ul>
-        </div>
-        <div class="right part">
-          <h3>問い合わせ</h3>
-          <ul class="toiawase">
-            <a href="">
-              <li>地図・フロア図
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>院内施設のご案内
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>よくあるお問い合わせ
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>お問い合わせ一覧
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-          </ul>
-        </div>
-        <div class="top">
+        <div class="kadan">
           <a  class="close" href="">来院・入院の方トップ</a>
-          <a href="">
+          <a href="#">
             <img src="images/btn_close_01.png" alt="閉じる" width="20px">
           </a>
-        </div>
+        </div>               
       </div> 
     
       <div class="menu-content" id="keiougijuku-ni2">
-        <div>
-          <h3>基本情報</h3>
-          <ul class="kihonjouhou">
-            <a href="">
-              <li>病院概要
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>診療科・部門一覧
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>統計・実績デーデータ
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>理念・行動指針
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-          </ul>
+        <div class="joudan">
+          <div>
+            <h3>基本情報</h3>
+            <ul class="kihonjouhou">
+              <a href="#">
+                <li>病院概要
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>診療科・部門一覧
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>統計・実績デーデータ
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>理念・行動指針
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div>
+            <h3>取り組み</h3>
+            <ul class="torikumi">
+              <a href="#">
+                <li>知ってほしい慶応義塾大学病院
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>病院紹介
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>病院広報誌「すゝめ
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>寄付のお願い
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div>
+            <h3>調べる</h3>
+            <ul class="shiraberu">
+              <a href="#">
+                <li>公開講座・社会連携講座
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>取材について
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>お問い合わせ一覧
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3>取り組み</h3>
-          <ul class="torikumi">
-            <a href="">
-              <li>知ってほしい慶応義塾大学病院
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>病院紹介
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>病院広報誌「すゝめ
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>寄付のお願い
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-          </ul>
-        </div>
-        <div>
-          <h3>調べる</h3>
-          <ul class="shiraberu">
-            <a href="">
-              <li>公開講座・社会連携講座
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>取材について
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>お問い合わせ一覧
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-          </ul>
-        </div>
-        <div></div>
-        <div class="top">
-          <a href="">慶応義塾大学病院についてのトップ</a>
-          <a href="">
+        <div class="kadan">
+          <a href="#">慶応義塾大学病院についてのトップ</a>
+          <a href="#">
             <img class="close" src="images/btn_close_01.png" alt="閉じる">
           </a>
         </div>
       </div> 
       
       <div class="menu-content" id="iryoukankei2">
-        <div>
-          <h3>紹介する</h3>
-          <ul class="shoukaisuru">
-            <a href="">
-              <li>患者さんの紹介について
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>診療科・部門一覧
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>病名・医師名検索
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>医療連携について
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-          </ul>
+        <div class="joudan">
+          <div>
+            <h3>紹介する</h3>
+            <ul class="shoukaisuru">
+              <a href="#">
+                <li>患者さんの紹介について
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>診療科・部門一覧
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>病名・医師名検索
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>医療連携について
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div>
+            <h3>学ぶ・働く</h3>
+            <ul class="namabuhataraku">
+              <a href="#">
+                <li>採用情報
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>研修医・専修医について
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>ボランティア募集
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>医学部・医学研究科
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div>
+            <h3>調べる</h3>
+            <ul class="shiraberu">
+              <a href="#">
+                <li>治験・臨床試験情報
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>統計・実績データ
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>よくあるお問い合わせ
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li>お問い合わせ一覧
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3>学ぶ・働く</h3>
-          <ul class="namabuhataraku">
-            <a href="">
-              <li>採用情報
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>研修医・専修医について
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>ボランティア募集
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>医学部・医学研究科
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-          </ul>
-        </div>
-        <div>
-          <h3>調べる</h3>
-          <ul class="shiraberu">
-            <a href="">
-              <li>治験・臨床試験情報
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>統計・実績データ
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>よくあるお問い合わせ
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-            <a href="">
-              <li>お問い合わせ一覧
-                <i class="fas fa-chevron-right"></i>
-              </li>
-            </a>
-          </ul>
-        </div>
-        <div class="top">
-          <a href="">医療関係の方のトップ</a>
-          <a href="">
+        <div class="kadan">
+          <a href="#">医療関係の方のトップ</a>
+          <a href="#">
             <img class="close" src="images/btn_close_01.png" alt="閉じる">
           </a>
         </div>
@@ -444,12 +451,6 @@
   <section class="main-pic">
 
     <div class="swiper-container mySwiper">
-      <!-- <ul class="swiper-wrapper">
-        <li style="display: none; margin-left: 0px; position: absolute; height: 126px;" class>
-          <a href="">
-            <img class="mainvisual pc" src="images/JP_SP001(hitoniyasashii).jpg" alt="次世代への継承">
-          </a>
-        </li> -->
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <a href="">
@@ -508,12 +509,13 @@
 
   </section>
 
+
   <section class="sec1 importantInfo">
     <div class="container">
       <div class="pink">
         <h2><span>!</span>　大切なお知らせ</h2> 
       </div>
-      <ul>
+      <ul class="info">
         <dl>
           <li>
             <dt>
@@ -584,21 +586,25 @@
     </div>
   </section>
 
+
   <section class="sec3 sect">
     <div class="container">
       <ul>
         <li>
           <a href="">
+            <i class="bi bi-search"></i>
             診療科・部門一覧
           </a>
         </li>
         <li>
           <a href="">
+            <i class="bi bi-search"></i>
             医師・病名検索 
           </a>
         </li>
         <li>
           <a href="">
+            <i class="bi bi-search"></i>
             地図・フロア図 
           </a>
         </li>
@@ -606,13 +612,14 @@
     </div>
   </section>
   
+
   <section class="sec4 busi-info">
     <dl class="tabBar">
       <div class="tab bar1">   
-          <dt class="current on cur1" data-id="bar1">
-            病院からのお知らせ
-          </dt>
-          <dd class="content on con1" id="bar1">
+        <dt class="current cur1" data-id="bar1">
+          病院からのお知らせ
+        </dt>
+        <dd class="content con1" id="bar1">
             <ul>
               <li>
                 <div class="block1">
@@ -625,10 +632,9 @@
               <li>
                 <div class="block1">
                   <span class="date">2021年11月01日<span class="icon info">お知らせ</span></span> 
-                  
                 </div>
-                <div class="bloxk2 pdf">
-                  <a href="">
+                <div class="block2 pdf">
+                  <a href="/oshirase/hosp/detail/40260/">
                     初診診療担当医表を更新しました。
                     <img src="images/icon_pdf.png" alt="pdfアイコン">
                   </a>
@@ -639,7 +645,7 @@
                 <span class="date">2021年10月29日<span class="icon info">お知らせ</span></span>  
               </div>
               <div class="block2">
-                <a href="">2021年度インフルエンザワクチン接種のお知らせ</a>
+                <a href="/oshirase/hosp/detail/40260/">2021年度インフルエンザワクチン接種のお知らせ</a>
               </div>
             </li>
             <li>
@@ -647,7 +653,7 @@
                 <span class="date">2021年10月25日<span class="icon info">お知らせ</span></span> 
               </div>
               <div class="block2">
-                <a href="">2022年の外来診療日に関するお知らせ</a>
+                <a href="/oshirase/hosp/detail/40260/">2022年の外来診療日に関するお知らせ</a>
               </div>
             </li>
             <li>
@@ -655,7 +661,7 @@
                 <span class="date">2021年10月01日<span class="icon info">お知らせ</span></span>
               </div>
               <div class="block2 pdf">
-                <a href="">
+                <a href="/oshirase/hosp/detail/40260/">
                   初診診療担当医表を更新しました。
                   <img src="images/icon_pdf.png" alt="pdfアイコン">
                 </a>
@@ -664,6 +670,7 @@
           </ul>
           <p class="linkBa">
             <a href="/oshirase/hosp/">
+              <img src="images/maruya.png" alt="矢印" width="18">
               病院からのお知らせ一覧
             </a>
           </p>
@@ -681,7 +688,7 @@
                 <span class="date">2021年11月01日<span class="icon info">お知らせ</span></span> 
               </div>
               <div class="block2">
-                <a href="">
+                <a href="/oshirase/iryo/">
                   2021年11月初診診療担当医表。
                   <img src="images/icon_pdf.png" alt="pdfアイコン">
                 </a>           
@@ -692,7 +699,7 @@
                 <span class="date">2021年10月01日<span class="icon info">お知らせ</span></span> 
               </div>
               <div class="block2">
-                <a href="">
+                <a href="/oshirase/iryo/">
                   2021年10月初診診療担当医表。
                   <img src="images/icon_pdf.png" alt="pdfアイコン">
                 </a>           
@@ -703,7 +710,7 @@
                 <span class="date">2021年04月07日<span class="icon event">イベント</span></span> 
               </div>
               <div class="block2">
-                <a href="">
+                <a href="/oshirase/iryo/">
                   Keio Medical Alliance Fellowship Program 全体説明会（慶應オープンホスピタル2021）のWeb開催について
                   <img src="images/icon_window.png" alt="アイコン">
                 </a>           
@@ -714,7 +721,7 @@
                 <span class="date">2019年05月10日<span class="icon event">イベント</span></span> 
               </div>
               <div class="block2">
-                <a href="">
+                <a href="/oshirase/iryo/">
                   6月8日（土） 研修医・医学部生を対象とする説明会イベント「慶應オープンホスピタル」を開催します。
                   <img src="images/icon_window.png" alt="アイコン">
                 </a>           
@@ -725,12 +732,18 @@
                 <span class="date">2018年06月21日<span class="icon info">お知らせ</span></span> 
               </div>
               <div class="block2">
-                <a href=""> ｢慶應オープンホスピタル2018｣を開催しました </a>           
+                <a href="/oshirase/iryo/"> ｢慶應オープンホスピタル2018｣を開催しました </a>           
               </div>
             </li>
           </ul>
           <p class="linkBa tRight">
-            <a href="/oshirase/iryo/">医療関係の方へのお知らせ一覧</a>
+            <a href="/oshirase/iryo/">
+              <img src="images/maruya.png" alt="矢印" width="18">
+              医療関係の方へのお知らせ一覧
+            </a>
+            <canvas class="b2" width="20" height="20">
+              Canvas not supported.
+            </canvas>
           </p>    
         </dd>
       </div>
@@ -752,11 +765,10 @@
           </ul>
         </dd>
       </div>
-      
     </dl>
-    <div class="container">
-    </div>
-  </section>
+    <!-- <div class="container">
+    </div> -->
+  </section>  
   
   
   <section class="sec5 task">
@@ -766,7 +778,8 @@
           <a href="">
             <div>
               <img src="images/img_feature_07.jpg" alt="">
-              <span>情報公開について</span>
+              <img class="maruya" src="images/maruya.png" alt="矢印">
+              <span> 情報公開について</span>
             </div>
           </a>
         </li>
@@ -774,6 +787,7 @@
           <a href="">
             <div>
               <img src="images/img_feature_08.jpg" alt="">
+              <img class="maruya" src="images/maruya.png" alt="矢印">
               <span>臨床研究推進センター <img src="images/icon_window.png" alt="アイコン"></span> 
             </div>
           </a>
@@ -782,6 +796,7 @@
           <a href=""> 
             <div>
               <img src="images/img_feature_09.jpg" alt="">
+              <img class="maruya" src="images/maruya.png" alt="矢印">
               <span>慶應義塾大学 医学部・医学研究科 <img src="images/icon_window.png" alt="アイコン"></span>           
             </div>
           </a>
@@ -790,6 +805,7 @@
           <a href="">
             <div>
               <img src="images/img_feature_01.jpg" alt="">
+              <img class="maruya" src="images/maruya.png" alt="矢印">
               <span>さまざまな連携による最適な医療の実践</span> 
             </div>
           </a>
@@ -798,6 +814,7 @@
           <a href="">
             <div>
               <img src="images/img_feature_02.jpg" alt="">
+              <img class="maruya" src="images/maruya.png" alt="矢印">
               <span>知ってほしい慶應義塾大学病院</span>
             </div>
           </a>
@@ -806,6 +823,7 @@
           <a href="">
             <div>
               <img src="images/img_feature_03.jpg" alt="">
+              <img class="maruya" src="images/maruya.png" alt="矢印">
               <span>新しい医療への取り組み</span>        
             </div>
           </a>
@@ -814,6 +832,7 @@
           <a href="">
             <div>
               <img src="images/img_feature_04.jpg" alt="">
+              <img class="maruya" src="images/maruya.png" alt="矢印">
               <span>新病院棟（1号館）について</span>
             </div>
           </a>
@@ -822,6 +841,7 @@
           <a href="">
             <div>
               <img src="images/img_feature_05.jpg" alt="">
+              <img class="maruya" src="images/maruya.png" alt="矢印">
               <span>医療・健康情報（KOMPAS） <img src="images/icon_window.png" alt="アイコン"></span>      
               
             </div>
@@ -831,6 +851,7 @@
           <a href="">
             <div>
               <img src="images/img_feature_06.jpg" alt="">
+              <img class="maruya" src="images/maruya.png" alt="矢印">
               <span>医療人の育成</span>        
             </div>
           </a>
@@ -839,6 +860,7 @@
           <a href="">
             <div>
               <img src="images/img_feature_06.jpg" alt="">
+              <img class="maruya" src="images/maruya.png" alt="矢印">
               <span>医療人の育成</span>        
             </div>
           </a>
@@ -847,14 +869,13 @@
     </div>
   </section>
 
-
   <section class="sec6 on-work">
     <div class="container">
 
       <div class="container1">
         <div class="inner inner1">
           <div class="theme">
-            <h3><img src="images/icon_window.png" alt="アイコン">  住所・電話</h3>
+            <h3><img src="images/icon_window.png" alt="アイコン">   住所・電話</h3>
           </div>
           <div class="detail">
             <p>〒160-8582 東京都新宿区信濃町35</p>
@@ -864,7 +885,7 @@
 
         <div class="inner inner2">
           <div class="theme">
-            <h3><img src="images/icon_window.png" alt="アイコン">  診療受付</h3>
+            <h3><img src="images/icon_window.png" alt="アイコン">   診療受付</h3>
           </div>
           <div class="detail">
             <p>午前8時40分～午前11時00分</p>
@@ -873,7 +894,7 @@
 
         <div class="inner inner3">
           <div class="theme">
-            <h3><img src="images/icon_window.png" alt="アイコン">  正面玄関開錠</h3>
+            <h3><img src="images/icon_window.png" alt="アイコン">   正面玄関開錠</h3>
           </div>
           <div class="detail">
             <p>診療日：午前7時45分～午後7時00分</p>
@@ -884,7 +905,7 @@
 
         <div class="inner inner4">
           <div class="theme">
-            <h3><img src="images/icon_window.png" alt="アイコン">  休診日</h3>
+            <h3><img src="images/icon_window.png" alt="アイコン">   休診日</h3>
           </div>
           <div class="detail">
             <p>日曜日・第1・3土曜日</p>
@@ -938,94 +959,95 @@
     
 
   <section class="sec7">
-    
-    <div class="container">
-      <div class="swiper-container yourSwiper"> 
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="">
-              <img src="images/bnr_footer_01.png" alt="">
-            </a>
+    <div class="outer">
+      <div class="container">
+        <div class="swiper-container yourSwiper"> 
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="">
+                <img src="images/bnr_footer_01.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="images/bnr_footer_02.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="images/bnr_footer_04.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="images/bnr_footer_05.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="images/bnr_footer_06.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="images/bnr_footer_07.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="images/bnr_footer_08.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="images/bnr_footer_09.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="images/bnr_footer_10.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="images/bnr_footer_11.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="images/bnr_footer_12.png" alt="">
+              </a>
+            </div>
           </div>
-          <div class="swiper-slide">
-            <a href="">
-              <img src="images/bnr_footer_02.png" alt="">
-            </a>
+          <div class="swiper-button-prev">
+            <img src="images/btn_prev_01.png" alt="巻き戻し">
           </div>
-          <div class="swiper-slide">
-            <a href="">
-              <img src="images/bnr_footer_04.png" alt="">
-            </a>
+          <div class="swiper-button-next">
+            <img src="images/btn_next_01.png" alt="先送り">
           </div>
-          <div class="swiper-slide">
-            <a href="">
-              <img src="images/bnr_footer_05.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="">
-              <img src="images/bnr_footer_06.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="">
-              <img src="images/bnr_footer_07.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="">
-              <img src="images/bnr_footer_08.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="">
-              <img src="images/bnr_footer_09.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="">
-              <img src="images/bnr_footer_10.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="">
-              <img src="images/bnr_footer_11.png" alt="">
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="">
-              <img src="images/bnr_footer_12.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="swiper-button-prev">
-          <img src="images/btn_prev_01.png" alt="巻き戻し">
-        </div>
-        <div class="swiper-button-next">
-          <img src="images/btn_next_01.png" alt="先送り">
         </div>
       </div>
-    </div>
-
+    </div> 
   </section>
   
 
   <footer>
     <div class="outer">
-      <div class="container">
-        <div>
+      <ul class="container">
+        <li>
           <a href="">このサイトについて</a>
-        </div>
-        <div>
+        </li>
+        <li>
           <a href="">プライバシーポリシー</a>
-        </div>
-        <div>
+        </li>
+        <li>
           <a href="">お問い合わせ一覧</a>
-        </div>
-        <div>
+        </li>
+        <li>
           <a href="">ご寄付のお願い</a>
-        </div>
-      </div>
+        </li>
+      </ul>
+
       <div class="copy">
         <span>Copyright (C） Keio University All Rights Reserved.</span>
       </div>
@@ -1068,7 +1090,7 @@
 <script>
   var swiper = new Swiper(".yourSwiper", {
     slidesPerView: "auto",
-    spaceBetween: 30,
+    spaceBetween: 15,
     // centeredSlides: true,
     loop: true,
     autoplay: {
@@ -1096,7 +1118,7 @@
 
 
 <!-- 前の画像へ戻る
-  
+  images/icon_window.png
   慶應義塾
   慶應義塾大学医学部・医学研究科
   慶應義塾大学看護医療学部

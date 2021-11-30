@@ -117,7 +117,13 @@ body.show {
   overflow: hidden;
 }
 
+.above {
+  height: 22px;
+  background-color: #ECE9E1;
+}
+
 h1 {
+  line-height: 22px;
   color: red;
 }
 
@@ -152,7 +158,7 @@ header #headerContent p img {
 
 header #headerContent #menu-open {
   position: absolute;
-  top: 13px;
+  top: 15px;
   right: 10px;
   cursor: pointer;
 }
@@ -164,6 +170,7 @@ header #headerContent #menu-open img {
 
 header #mobile-menu {
   /* position: absolute; */
+  /* display: none; */
   position: fixed;
   top: 16px;
   bottom: 0;
@@ -183,6 +190,7 @@ header #mobile-menu.show {
   pointer-events: auto;
   background-color: #fff;
   transform: translateX(100%);
+  /* transform: translateX(100%); */
 }
 
 header #mobile-menu .menu-top {
@@ -248,7 +256,7 @@ header #mobile-menu #menu-choose #headerSearchText {
 
 header #mobile-menu #menu-choose #search {
   position: absolute;
-  top: 25px;
+  top: 23px;
   right: 25px;
 }
 
@@ -294,7 +302,7 @@ header #help {
 
 
 header #main-menu {
-  height: 45px;
+  height: 50px;
   width: 100%;
   background-color: rgb(4, 4, 86);
 }
@@ -306,22 +314,21 @@ header #main-menu .items {
 }
 
 header #main-menu .item {
-  padding: 5px;
-  display: block;
+  display: flex;
+  align-items: center;
+  padding: 2px 16px;
   width: 33%;
   height: 45px;
   color: #fff;
-  border: 1px solid white;
+  border-right: 1px solid white;
   position: relative;
 }
 
 header #main-menu .item a {
-  display: block;
-  align-items: center;
-  text-decoration: none;
-  padding: 7px 10px;
-  font-size: 12px;
+  font-size: 11px;
+  line-height: 1.2;
   color: #fff;
+  text-decoration: none;
 }
 
 header #main-menu .item .else {
@@ -331,8 +338,8 @@ header #main-menu .item .else {
 header #main-menu .item a .fas {
   font-size: 16px;
   position: absolute;
-  top: 15px;
-  right: 10px;
+  top: 18px;
+  right: 9px;
 }
 
 header #main-menu .item a .down1.on {
@@ -377,8 +384,9 @@ header #main-menu .item a .up3.on {
 
 header #main-menu .menu-content {
   position: fixed;
-  top: 124px;
-  bottom: 2900px;
+  top: 134px;
+  /* bottom: 4000px; */
+  bottom: 2400px;
   right: 0;
   left: 0;
   opacity: 0;
@@ -513,10 +521,6 @@ header #main-menu .menu-content .top img {
   height: 250px;
 }
 
-.sec1 span {
-  display: none;
-}
-
 .sec1 h2 {
   display: block;
   width: 100%;
@@ -546,6 +550,7 @@ header #main-menu .menu-content .top img {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 1px;
   color: #245dc1;
   font-size: 14px;
 }
@@ -565,7 +570,7 @@ header #main-menu .menu-content .top img {
 }
 
 .sec2 ul li {
-  width: calc((100% - 0px) / 2); 
+  width: 50%; 
   height: 130px;
   list-style: none;
   margin-bottom: 15px;
@@ -573,7 +578,7 @@ header #main-menu .menu-content .top img {
 
 .sec2 ul li a {
   display: block;
-  margin: 0px 14px 10px 12px;
+  margin: 0px 10px 10px 10px;
   text-decoration: none;
 }
 
@@ -592,9 +597,9 @@ header #main-menu .menu-content .top img {
   background-color: #fff;
 }
 
-.sec3 ul {
-  width: 94%;
-  margin: 30px 14px 30px 12px;
+.sec3 .container {
+  width: 96%;
+  margin: 20px auto;
 }
 
 .sec3 ul li {
@@ -607,7 +612,6 @@ header #main-menu .menu-content .top img {
   font-size: 20px;
   color: #000;
   padding-left: 40px;
-  width: 95%;
   height: 70px;
   line-height: 70px;
   text-align: left;
@@ -633,7 +637,7 @@ header #main-menu .menu-content .top img {
   width: 100%;
   height: 56px;
   box-sizing: border-box;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
   box-shadow: 1px 2px 4px rgb(0 0 0 / 30%);
 }
 
@@ -770,10 +774,39 @@ header #main-menu .menu-content .top img {
   background-color: #F0EDE5;
 }
 
-.sec5 ul {
+.sec5 .container {
   padding-top: 20px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.sec5 ul {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  gap: 14px;
+  padding-bottom: 7px;
+}
+
+.sec5 ul li {
+  display: block;
+  list-style: none;
+  width: calc((100% - 14px) / 2); 
+  height: auto;
+  background-color: #fff;
+}
+
+.sec5 ul li a {
+  text-decoration: none;
+}
+
+.sec5 ul li div .maruya {
+  display: none;
+  width: 18px;
+  vertical-align: -4px;
+  position: absolute;
+  top: 108px;
+  left: 10px;
 }
 
 .sec5 ul li div::before {
@@ -784,29 +817,13 @@ header #main-menu .menu-content .top img {
   background-color: darkblue;
 }
 
-.sec5 ul li {
-  display: block;
-  margin-bottom: 15px;
-  margin-left: 12px;
-  margin-right: 10px;
-  list-style: none;
-  width: calc(46%); 
-  height: auto;
-  background-color: #7683D2;
-}
-
-.sec5 ul li a {
-  text-decoration: none;
-}
-
-.sec5 ul li a div {
+/* .sec5 ul li a div {
   width: 100%;
   height: auto;
   border-top: 2px solid darkblue;
-  border: 1px solid #bbb;
   text-align: start;
   background-color: #fff;
-}
+} */
 
 .sec5 ul li div > img {
   width: 100%;
@@ -850,15 +867,18 @@ header #main-menu .menu-content .top img {
   font-size: 14px;
   color: #333333;
   font-weight: 400;
-  line-height: 40px;
-  height: 40px;
+  line-height: 30px;
+  /* line-height: 40px; */
+  height: 30px;
 }
 
 .sec6 .inner p {
   font-size: 12px;
   color: #333333;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 1.6;
+  /* line-height: 12px; */
+  /* line-height: 19px; */
 }
 
 .sec6 .inner::after {
@@ -1026,39 +1046,44 @@ header #main-menu .menu-content .top img {
   display: none;
 } 
 
+
 footer {
   width: 100%;
-  height: 65px;
+  height: auto;
   background-color:#000055;
   padding-top: 18px;
 }
 
 footer .container {
+  box-sizing: border-box;
+  padding-right: 20px;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
-footer .container > div {
+footer .container li {
+  list-style: none;
+  margin-bottom: 10px;
   border-right: 1px solid #fff;
 }
 
-footer .container > div a {
+footer .container li a {
   text-decoration: none;
   font-size: 12px;
   font-weight: 400;
   color: #fff;
-  margin: 11px;
+  margin: 12px;
 }
 
-footer .container > div a:hover {
+footer .container li a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
 footer .copy {
-  margin-top: 20px;
-  /* margin-left: auto; */
+  padding: 15px 10px;
   text-align: end;
-  padding-right: 10px;
 }
 
 footer .copy span {
@@ -1073,10 +1098,15 @@ footer .copy span {
     color: yellow;
   }
 
+  body {
+    width: 100%;
+    /* background-color: rgb(109, 245, 213); */
+  }
+
   header #headerContent {
     display: block;
     width: 100%;
-    height: 105px;
+    height: 110px;
     background-color: #fff;
     position: relative;
   }
@@ -1085,7 +1115,7 @@ footer .copy span {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
   }
   
   header #headerContent p img {
@@ -1103,12 +1133,6 @@ footer .copy span {
     display: none;
   }
 
-  /*   
-  header #headerContent #menu-open img {
-    width: 30px;
-    height: 21.5px;
-  } */
-  
   header #mobile-menu {
     /* position: static; */
 
@@ -1145,7 +1169,7 @@ footer .copy span {
   }
 
   header #pc-menu #pc-items li {
-    margin-top: 15px;
+    margin-top: 20px;
     display: block;
     width: auto;
     height: 11px;
@@ -1182,23 +1206,24 @@ footer .copy span {
     font-weight: 200;
   }
 
-  
   header #pc-menu #pc-choose {
     display: block;
-    height: 71px;
-    width: 100%;
-    background-color: transparent;
-    position: relative;
+    /* width: 245px;
+    height: 40px; */
+    background-color: pink;
+    /* background-color: transparent; */
+    /* position: relative; */
   }
   
   header #pc-menu #pc-choose #pc-SearchText {
     position: absolute;
-    top: 20px;
-    left: 10px;
+    top: 50px;
+    /* top: 20px; */
+    left: 8px;
     margin: 2px;
-    padding: 5px;
-    height: 30px;
-    width: 230px;
+    padding: 5px 10px;
+    height: 28px;
+    width: 220px;
     font-size: 14px;
     border: 1px solid rgb(189, 185, 185);
     border-radius: 3px;
@@ -1207,8 +1232,8 @@ footer .copy span {
   
   header #pc-menu #pc-choose #pc-search {
     position: absolute;
-    top: 37px;
-    left: 225px;
+    top: 63px;
+    left: 228px;
   }
   
   header #pc-menu #pc-choose ul li {
@@ -1299,11 +1324,161 @@ footer .copy span {
   }
 
 
+/* 
+
+  header #main-menu {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(4, 4, 86);
+  }
+  
+  header #main-menu .items {
+    list-style: none;
+    width: 100%;
+    display: flex;
+  }
+  
+  header #main-menu .item {
+    display: flex;
+    align-items: center;
+    padding: 2px 16px;
+    width: 33%;
+    height: 45px;
+    color: #fff;
+    border-right: 1px solid white;
+    position: relative;
+  }
+  
+  header #main-menu .item a {
+    font-size: 11px;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header #main-menu .item .else {
+    display: none;
+  }
+  
+  header #main-menu .item a .fas {
+    font-size: 16px;
+    position: absolute;
+    top: 18px;
+    right: 9px;
+  }
+  
+  header #main-menu .item a .down1.on {
+    display: block;
+  } 
+  header #main-menu .item a .down1{
+    display: none;
+  } 
+  header #main-menu .item a .up1 {
+    display: none;
+  } 
+  header #main-menu .item a .up1.on {
+    display: block;
+  } 
+  
+  
+  header #main-menu .item a .down2.on {
+    display: block;
+  } 
+  header #main-menu .item a .down2 {
+    display: none;
+  } 
+  header #main-menu .item a .up2 {
+    display: none;
+  } 
+  header #main-menu .item a .up2.on {
+    display: block;
+  } 
+  
+  header #main-menu .item a .down3.on {
+    display: block;
+  } 
+  header #main-menu .item a .down3 {
+    display: none;
+  } 
+  header #main-menu .item a .up3 {
+    display: none;
+  } 
+  header #main-menu .item a .up3.on {
+    display: block;
+  } 
+  
+  header #main-menu .menu-content {
+    position: fixed;
+    top: 190px;
+    bottom: 1600px;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s;
+    z-index: 20;
+  }
+  
+  header #main-menu .menu-content.show {
+    pointer-events: auto;
+    opacity: 1;
+    background-color: #fff;
+  }
+  
+  
+  header #main-menu .menu-content h3 {
+    display: none;
+  }
+  
+  header #main-menu .menu-content ul a:hover {
+    text-decoration: none;
+  }
+  
+  header #main-menu .menu-content ul li {
+    list-style: none;
+    padding-left: 30px;
+    line-height: 45px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    position: relative;
+  }
+  
+  header #main-menu .menu-content ul li .fas {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: #999;
+  }
+  
+  
+  header #main-menu .menu-content .top {
+    padding-left: 30px;
+    line-height: 45px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    position: relative;
+  }
+  
+  header #main-menu .menu-content .top a:hover {
+    text-decoration: none;
+  }
+  
+  header #main-menu .menu-content .top img {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: #999;
+    display: inline-block;
+    width: 20px;
+  }  */
+  
+  
   header #main-menu {
     height: 52px;
     width: 100%;
     background-color: rgb(4, 4, 86);
-    /* position: relative; */
   }
   
   header #main-menu .items {
@@ -1381,6 +1556,18 @@ footer .copy span {
     display: none;
   } 
   
+  header #main-menu .menu-content {
+    position: fixed;
+    top: 190px;
+    bottom: 2050px;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s;
+    z-index: 20;
+  }
+  
   header #main-menu #rainyuin2 {
     position: static;
     opacity: 0;
@@ -1389,16 +1576,30 @@ footer .copy span {
   
   header #main-menu #rainyuin2.show {
     position: absolute;
-    top: ;
-    display:flex;
+    top: 190px; 
     width: 100%;
     height: auto;
-    background-color: rgb(251, 237, 234);
     pointer-events: auto;
     opacity: 1;
-    /* background: #fff; */
-    background-color: yellow;
+    background: #fff;
   }
+  
+  header #main-menu #rainyuin2 .joudan {
+    display: flex;
+  }
+
+  header #main-menu #rainyuin2 .joudan div {
+    width: 33%;
+  }
+
+  header #main-menu #rainyuin2 .kadan {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E8E8E8;
+  }
+
   header #main-menu #keiougijuku-ni2 {
     position: static;
     opacity: 0;
@@ -1406,16 +1607,31 @@ footer .copy span {
   }
   
   header #main-menu #keiougijuku-ni2.show {
-    position: static;
-    display:flex;
+    position: absolute;
+    top: 190px;
     width: 100%;
     height: auto;
-    background-color: rgb(251, 237, 234);
     pointer-events: auto;
     opacity: 1;
-    /* background: #fff; */
-    background-color: yellow;
+    background-color: #fff;
   }
+
+  header #main-menu #keiougijuku-ni2 .joudan {
+    display: flex;
+  }
+
+  header #main-menu #keiougijuku-ni2 .joudan div {
+    width: 33%;
+  }
+
+  header #main-menu #keiougijuku-ni2 .kadan {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E8E8E8;
+  }
+  
   header #main-menu #iryoukankei2 {
     position: static;
     opacity: 0;
@@ -1423,29 +1639,40 @@ footer .copy span {
   }
   
   header #main-menu #iryoukankei2.show {
-    position: static;
-    display:flex;
+    position: absolute;
+    top: 190px;
     width: 100%;
     height: auto;
-    background-color: rgb(251, 237, 234);
     pointer-events: auto;
     opacity: 1;
-    /* background: #fff; */
-    background-color: yellow;
+    background-color: #fff;
+  }
+  
+  header #main-menu #iryoukankei2 .joudan {
+    display:flex;
+  }
+
+  header #main-menu #iryoukankei2 .joudan div {
+    width: 33%;
+  }
+
+  header #main-menu #iryoukankei2 .kadan {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E8E8E8;
   }
 
   header #main-menu .menu-content .part {
     display: block;
     width: 33%;
-    /* width: 33%; */
     height: auto;
-    background-color: pink;
   }
 
   header #main-menu #rainyuin2 .center {
     display: block;
     width: 33%;
-    background-color: skyblue;
   }
 
   header #main-menu .menu-content h3 {
@@ -1465,9 +1692,9 @@ footer .copy span {
     list-style: none;
     padding-left: 30px;
     margin-top: 5px;
-    line-height: 45px;
     width: 100%;
-    height: 45px;
+    height: 25px;
+    line-height: 25px;
     border: 1px solid transparent;
     position: relative;
   }
@@ -1477,32 +1704,34 @@ footer .copy span {
     top: 15px;
     left: 17px;
     color: #999;
-    /* display: none; */
+    display: none;
   }
 
   header #main-menu .menu-content .top {
-    /* padding-left: 30px;
+    padding-left: 30px;
     line-height: 45px;
     width: 100%;
     height: 45px;
     border: 1px solid #ddd;
-    position: relative; */
+    position: relative; 
     display: none;
   }
 
-  /* header #main-menu .menu-content .top a:hover {
+   header #main-menu .menu-content .top a:hover {
     text-decoration: none;
-  } */
+  } 
 
   header #main-menu .menu-content .top img {
-    /* position: absolute;
+    position: absolute;
     top: 20px;
     right: 50px;
     color: #999;
     display: inline-block;
-    width: 20px; */
+    width: 20px; 
     display: none;
   }
+
+
 
 
   .main-pic {
@@ -1616,9 +1845,14 @@ footer .copy span {
     left: 14px;
   }
 
-  .sec1 > ul {
+  .sec1 .container ul {
     width: calc(100% - 167px);
     height: 130px;
+    background-color:#ddd;
+    /* background-color:#E8E8E8; */
+  }
+  
+  .sec1 .container .info {
     background-color:#E8E8E8;
   }
 
@@ -1691,12 +1925,17 @@ footer .copy span {
     width: 160px;
   }
   
-
   .sec3 {
     width: 100%;
-    background-color: #fff;
+    background-color: rgb(247, 177, 177);
+    /* background-color: #fff; */
   }
   
+  .sec3 .container {
+    width: 100%;
+    margin: 0px;
+  }
+
   .sec3 ul {
     width: 100%;
     margin: 0px;
@@ -1714,15 +1953,14 @@ footer .copy span {
     text-decoration: none;
     font-size: 20px;
     color: #000;
-    padding-left: 40px;
-    width: 95%;
+    padding-left: 20px;
+    /* width: 95%; */
     height: 70px;
     line-height: 70px;
-    text-align: left;
+    /* text-align: left; */
     border: 1px solid #ddd;
     background-color: #F7F8F8;
   }
-  
   
   
   .sec4 {
@@ -1730,7 +1968,7 @@ footer .copy span {
     padding-top: 56px;
     width: 100%;
     height: auto;
-    padding-bottom: 22px;
+    padding-bottom: 0px;
     background-color: #F0EDE5;
   }
 
@@ -1792,7 +2030,7 @@ footer .copy span {
  
   .sec4 dl .tab .content {
     padding-top: 30px;
-    padding-bottom: 42px;
+    padding-bottom: 36px;
     background-color: #fff;
     display: none;
   } 
@@ -1830,26 +2068,31 @@ footer .copy span {
   .sec4 dl dd ul li .block1 {
     display: block;
     width: 200px;
+    padding-top: 8px;
+    /* background-color: #7683D2; */
   }
   
   .sec4 dl dd ul li .block2 {
     display: block;
     width: calc(100% - 200px);
+    margin-top: 0;
+    color: #245dc1;
+    /* background-color: #beee46; */
   }
   
   .sec4 dl dd ul {
     list-style: none;
   }
   
-  .sec4 dl dd .block {
+  .sec4 dl dd .block1 {
     margin-left: 0px;
   }
   
-  .sec4 dl dd .block .date {
+  .sec4 dl dd .block1 .date {
     font-size: 14px;
   }
   
-  .sec4 dl dd .block .info {
+  .sec4 dl dd .block1 .info {
     display: inline-block;
     margin-left: 10px;
     width: 60px;
@@ -1862,7 +2105,7 @@ footer .copy span {
     background-color: #E17D7D;
   }
   
-  .sec4 dl dd .block .event {
+  .sec4 dl dd .block1 .event {
     display: inline-block;
     margin-left: 10px;
     width: 60px;
@@ -1876,34 +2119,83 @@ footer .copy span {
   }
   
   .sec4 dl dd .content {
-    margin: 6px 0 16px 0;
+    margin: 0;
     font-size: 15px;
     line-height: normal;
     color: #245dc1;
   }
   
   .sec4 dl dd .linkBa {
+    padding-top: 0px;
     font-size: 15px;
     text-align: end;
   }
   
   .sec4 dl dd .linkBa a::before {
     content: "@";
+    display: none;
   }
   
+  .sec4 dl dd .linkBa a img {
+    vertical-align: bottom;
+  }
 
 
+  
   .sec5 {
     width: 100%;
     height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: #e1f7a7; */
     background-color: #F0EDE5;
   }
 
+  .sec5 .container {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+  
   .sec5 ul {
-    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
   }
+  
+  .sec5 ul li {
+    display: block;
+    margin-right: 0px;
+    list-style: none;
+    width: calc((100% - 20px)  / 3); 
+    height: 160px;
+    /* height: auto; */
+  }
+
+  .sec5 ul li a {
+    text-decoration: none;
+  }
+
+  .sec5 ul li a div {
+    position: relative;
+  }
+
+  .sec5 ul li div span {
+    display: block;
+    padding: 10px 0px 0px 30px;
+    line-height: 1.5;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .sec5 ul li div .maruya {
+    display: inline-block;
+    width: 18px;
+    vertical-align: -4px;
+    position: absolute;
+    top: 117px;
+    left: 10px;
+  }
+
 
   .sec5 ul li div::before {
     display: block;
@@ -1912,41 +2204,6 @@ footer .copy span {
     height: 2px;
     background-color: darkblue;
   } 
-
-  .sec5 ul li {
-    display: block;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    /* margin-left: 12px; */
-    margin-right: 0px;
-    list-style: none;
-    width: 32%; 
-    height: auto;
-  }
-
-  .sec5 ul li a {
-    text-decoration: none;
-  }
-
-  /* .sec5 ul li a div {
-    width: 100%;
-    height: auto;
-    border-top: 2px solid darkblue;
-    border: 1px solid #bbb;
-    text-align: start;
-    background-color: #fff;
-  } */
-
-  /* .sec5 ul li div > img {
-    width: 100%;
-  } */
-  /*   
-  .sec5 ul li div span {
-    display: block;
-    padding: 0px 15px;
-    line-height: 30px;
-    font-size: 10px;
-  } */
 
   .sec5 .container ul li:nth-child(9) {
     display: none;
@@ -1962,7 +2219,7 @@ footer .copy span {
 
   .sec6 .container1 {
     width: 480px;
-    height: 440px;
+    height: 423px;
     box-sizing: border-box;
     margin: 20px auto;
     padding: 0 10px;
@@ -2070,12 +2327,12 @@ footer .copy span {
   }
 
   .sec6 .yoyaku {
-    width: 215px;
-    height: 50px;
+    width: 214px;
+    height: 53px;
     background-color: #031763;
     position: absolute;
     top: -95px;
-    left: 20px;
+    left: 21px;
   }
   
   /* .sec6 .a1 {
@@ -2086,12 +2343,12 @@ footer .copy span {
   } */
   
   .sec6 .henkou {
-    width: 215px;
-    height: 50px;
+    width: 214px;
+    height: 53px;
     background-color: #031763;
     position: absolute;
     top: -95px;
-    right: 20px;
+    right: 21px;
     /* position: relative; */
   }
   
@@ -2159,7 +2416,7 @@ footer .copy span {
     left: 218px;
     background-color: #ff9f1a;
   }
-/*   
+  /*   
   .sec6 .a5 {
     position: absolute;
     top: 18px;
@@ -2168,104 +2425,123 @@ footer .copy span {
   }
    */
 
-/*   
-.sec7 {
-  padding-top: 25px;
-  width: 100%;
-  height: 145px;
-  background-color: #F0EDE5;
-}
+   .sec7 {
+     /* padding: 0; */
+     padding: 16px 0px 0px;
+     width: 100%;
+     height: 145px;
+     box-sizing: border-box;
+     background-color: #F0EDE5;
+   }
 
-.sec7 .container {
-  height: 100px;
-  width: 100%;
-  padding-top: 15px;
-  background-color: #fff;
-  position: relative;
-} */
-
-.sec7 .container .swiper-container {
-  display: block;
-  width: 648px;
-  margin:  8px auto;
-  height: 57px;
-  overflow: hidden;
-}
-/* 
-.sec7 .swiper-button-prev, .swiper-button-next {
-  width: 26px;
-  height: 26px;
-  font-size: 12px;
-  color: #fff;
-  background-color: #ccc;
-  border-radius: 13px;
-}
-
-.sec7 .swiper-button-prev {
-  position: absolute;
-  left: 20px;
-}
-
-.sec7 .swiper-button-prev::after {
-  display: none;
-} 
-
-.sec7 .swiper-button-next {
-  position: absolute;
-  right: 20px;
-}
-
-.sec7 .swiper-button-next::after {
-  display: none;
-}  */
-
-
-footer {
-  width: 100%;
-  height: 42px;
-  background-color:#000055;
-  padding-top: 18px;
-  position: relative;
-}
-
-footer .container {
-  display: flex;
-  position: absolute;
-  top: 18px;
-  left: 0;
-}
-
-footer .container > div {
-  border-right: 1px solid #fff;
-}
-
-footer .container > div a {
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 400;
-  color: #fff;
-  margin: 11px ;
-}
-
-footer .container > div a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-footer .copy {
-  position: absolute;
-  bottom: 13px;
-  right: 0;
-  /* padding-top: 20px;
-  text-align: end;
-  padding-right: 10px; */
-}
-
-footer .copy span {
-  font-size: 11px;
-  color: #fff;
-}
+   .sec7 .outer {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+   }
+   
+   .sec7 .container {
+     width: calc(100% - 20px);
+     height: 88px;
+     margin: 0 auto;
+     padding-top: 0px;
+     background-color:#F7F8F8;
+     position: relative;
+   }
+ 
+  .sec7 .container .swiper-container {
+    display: block;
+    width: 606px;
+    margin:  8px auto;
+    height: 88px;
+    overflow: hidden;
+    background-color: #F7F8F8;
+  }
   
+  .sec7 .container .swiper-container .swiper-wrapper {
+    margin-top: 16px;
+    width: 197px;
+    height: 88px;
+  }
+
+  .sec7 .swiper-button-prev, .swiper-button-next {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 13px;
+    background-color: #ccc;
+  }
+
+  .sec7 .swiper-button-prev {
+    position: absolute;
+    top: 52px;
+    left: 10px;
+  }
+
+  .sec7 .swiper-button-prev::after {
+    display: none;
+  } 
+
+  .sec7 .swiper-button-next {
+    position: absolute;
+    top: 52px;
+    right: 10px;
+  }
+
+  .sec7 .swiper-button-next::after {
+    display: none;
+  } 
+
+
+  footer {
+    width: 100%;
+    height: auto;
+    background-color:#000055;
+    padding-top: 18px;
+    position: relative;
+  }
+
+  /* footer .outer {
+    width: 330px;
+  } */
+
+  footer .container {
+    /* width: 330px; */
+    /* height: auto; */
+    display: flex;
+  }
+
+  footer .container li {
+    width: auto;
+    list-style: none;
+    border-right: 1px solid #fff;
+    padding-bottom: 0px;
+
+  }
+  
+  footer .container li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0px 12px;
+  }
+
+  footer .container > div a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  footer .copy {
+    padding: 0px 10px 15px;
+  }
+
+  footer .copy span {
+    font-size: 11px;
+    color: #fff;
+  }
+    
 
   
 }
@@ -2472,7 +2748,7 @@ footer .copy span {
     text-decoration: underline;
   }
 
-
+/* 
   header #main-menu {
     height: 52px;
     width: 100%;
@@ -2543,7 +2819,7 @@ footer .copy span {
   header #main-menu .item p .fas {
     display: none;
   }
-  
+   */
 
 
   .sec1 {
@@ -2678,7 +2954,8 @@ footer .copy span {
 
    .sec3 {
     width: 100%;
-    background-color: #fff;
+    background-color: #F7F8F8;
+    border: 1px solid #ccc;
   }
 
   .sec3 .container {
@@ -2693,7 +2970,12 @@ footer .copy span {
   
   .sec3 ul li {
     list-style: none;
+    /* border: 1px solid #ccc; */
   }
+
+  /* .sec3 ul li:first-child {
+    border-right: 1px solid #ccc;
+  } */
   
   .sec3 ul li a {
     display: block;
@@ -2705,19 +2987,26 @@ footer .copy span {
     height: 70px;
     line-height: 70px;
     text-align: left;
-    border: 1px solid #ccc; 
-    border-right: 1px solid transparent; 
-    background-color: #fff;
+    border: 1px solid #ddd;
+    /* border: 1px solid #ccc;  */
+    /* border-right: 1px solid transparent;  */
+    background-color: #F7F8F8;
   }
   
-  /* .sec3 ul li a:first-child {
+  .sec3 ul li:nth-child(1) a {
     border-left: 1px solid #fff;
-  } */
-
+    /* background-color: #ff9; */
+  }
+  
+  .sec3 ul li:nth-child(3) a {
+    border-right: 1px solid #fff;
+    /* background-color: #ff9; */
+  }
 
 
   .sec4 {
     display: block;
+    padding-top: 0;
     padding-top: 56px;
     width: 100%;
     height: auto;
@@ -2735,8 +3024,6 @@ footer .copy span {
   .sec4 dl {
     width: 100%;
     margin: 0px;
-    /* margin: 20px 14px 20px 12px; */
-    /* padding-bottom: 42px; */
   }
 
   .sec4 dl .tab .current {
@@ -2833,17 +3120,18 @@ footer .copy span {
   
   .sec4 dl dd ul {
     list-style: none;
+    /* background-color: #b7f75d; */
   }
   
-  .sec4 dl dd .block {
+  .sec4 dl dd .block1 {
     margin-left: 0px;
   }
   
-  .sec4 dl dd .block .date {
+  .sec4 dl dd .block1 .date {
     font-size: 14px;
   }
   
-  .sec4 dl dd .block .info {
+  .sec4 dl dd .block1 .info {
     display: inline-block;
     margin-left: 10px;
     width: 60px;
@@ -2856,7 +3144,7 @@ footer .copy span {
     background-color: #E17D7D;
   }
   
-  .sec4 dl dd .block .event {
+  .sec4 dl dd .block1 .event {
     display: inline-block;
     margin-left: 10px;
     width: 60px;
@@ -2882,11 +3170,11 @@ footer .copy span {
     padding-right: 20px;
   }
   
-  .sec4 dl dd .linkBa a::before {
+  /* .sec4 dl dd .linkBa a::before {
     content: "@";
-  }
+  } */
 
-  .sec4 .container {
+  /* .sec4 .container {
     position: absolute;
     top: 108px;
     left: 0;
@@ -2894,24 +3182,56 @@ footer .copy span {
     height: 300px;
     background-color: #fff;
     z-index: -1;
-  }
+  } */
 
 
-  .sec5 {
+  /* .sec5 {
     width: 100%;
     height: auto;
+    padding-top: 20px;
+    padding-bottom: 2px;
+    background-color: #e1f7a7; 
     background-color: #F0EDE5;
   }
 
   .sec5 .container {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+  
+  .sec5 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .sec5 ul li {
+    display: block;
+    margin-right: 0px;
+    list-style: none;
+    width: calc((100% - 20px)  / 3); 
+    height: 160px;
+    height: auto;
+  } */
+
+  .sec5 {
+    width: 100%;
+    height: auto;
+    /* background-color: #ecbd3c; */
+    background-color: #F0EDE5;
+  }
+  
+  .sec5 .container {
     width: 990px;
     margin: 0 auto;
   }
-
+  
   .sec5 ul {
-    padding-top: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: flex;
     flex-wrap: wrap;
+    gap: 18px;
   }
 
   /* .sec5 ul li div::before {
@@ -2924,13 +3244,13 @@ footer .copy span {
 
   .sec5 ul li {
     display: block;
-    margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 15px;
+    /* margin-bottom: 15px; */
+    /* margin-left: 5px;
+    margin-right: 15px; */
     list-style: none;
-    width: 31%; 
+    width: calc((990px - 36px) / 3); 
     /* width: calc(46%);  */
-    height: auto;
+    height: 166px;
   }
 
   .sec5 ul li a {
@@ -2961,6 +3281,28 @@ footer .copy span {
     display: none;
     /* opacity: 0; */
   } 
+
+  
+  .sec5 ul li a div {
+    position: relative;
+  }
+
+  .sec5 ul li div span {
+    display: block;
+    padding: 8px 0px 0px 30px;
+    line-height: 1.5;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .sec5 ul li div .maruya {
+    width: 18px;
+    vertical-align: -4px;
+    position: absolute;
+    top: 135px;
+    left: 10px;
+  }
+
 
 
 
@@ -3090,7 +3432,7 @@ footer .copy span {
   }
   
   .sec6 .container1 {
-    width: 490px;
+    width: 480px;
     height: 440px;
     box-sizing: border-box;
     margin-top: 10px;
@@ -3118,7 +3460,7 @@ footer .copy span {
   
   .sec6 .container1 .inner .theme {
     display: block;
-    width: 185px;
+    width: 183px;
     box-sizing: border-box;
     padding: 0px 25px;
     /* background-color: yellow; */
@@ -3126,8 +3468,8 @@ footer .copy span {
 
   .sec6 .container1 .inner .detail {
     display: block;
-    width: calc(100% - 185px);
-    padding: 12px;
+    width: calc(100% - 183px);
+    padding: 15px;
     background-color: #F7F8F8;
   }
   
@@ -3144,7 +3486,7 @@ footer .copy span {
     font-size: 15px;
     color: #333333;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.6;
   }
   
   /* .sec6 .inner::after {
@@ -3167,6 +3509,20 @@ footer .copy span {
      position: relative;
    }
 
+  .sec6 .map {
+    display: block;
+    width: 480px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .sec6 .map img {
+    display: block;
+    width: 480px;
+    height: auto;
+    /* margin-left: 100px; */
+  }
+
   .sec6 .container2 .raiin {
     font-size: 15px;
     font-weight: 400;
@@ -3177,33 +3533,54 @@ footer .copy span {
   
   .sec6 .container2 .raiin:hover {
     cursor: pointer;
-    opacity: .7;
+    opacity: .6;
   }
   
   .sec6 .container2 .yoyaku {
     background-color: #031763;
-    position: relative;
+    width: 215px;
+    height: 55px;
+    position: absolute;
+    top: 355px;
+    left: -475px; 
   }
   
+  .sec6 .yoyaku {
+    position: absolute;
+    top: 375px;
+    left: -610px;
+  }
+
   .sec6 .container2 .a1 {
     position: absolute;
     top: 18px;
     left: 20px;
     background-color: transparent;
   }
-  
+
   .sec6 .container2 .henkou {
     background-color: #031763;
+    width: 215px;
+    height: 55px;
+    position: absolute;
+    top: 365px;
+    right: 21px;
     position: relative;
   }
   
+  .sec6 .henkou {
+    position: absolute;
+    top: 315px;
+    left: -382px;
+  } 
+
   .sec6 .container2 .a2 {
     position: absolute;
     top: 18px;
     left: 20px;
     background-color: transparent;
   }
-  
+
   .sec6 .container2 .map img {
     display: block;
     width: 477px;
@@ -3253,25 +3630,6 @@ footer .copy span {
     background-color: transparent;
   }
 
-  
-  .sec6 .yoyaku {
-    width: 215px;
-    height: 50px;
-    background-color: #031763;
-    position: absolute;
-    top: 375px;
-    left: -610px;
-  }
-  
-  .sec6 .henkou {
-    width: 215px;
-    height: 50px;
-    background-color: #031763;
-    position: absolute;
-    top: 315px;
-    left: -382px;
-  }
-
   .sec6 .access {
     width: 100px;
     height: 100px;
@@ -3279,9 +3637,10 @@ footer .copy span {
     box-sizing: border-box;
     position: absolute;
     font-weight: 700;
-    top: -35px;
-    left: -130px;
-    background-color: #555555;
+    top: 20px;
+    left: -125px;
+    background-color: #666666;
+    opacity: 0.9;
   }
   
   .sec6 .access > p {
@@ -3299,7 +3658,7 @@ footer .copy span {
     height: 52px;
     font-weight: 700;
     position: absolute;
-    top: -158px;
+    top: -103px;
     left: 70px;
     background-color: #ff9f1a;
   }
@@ -3310,8 +3669,10 @@ footer .copy span {
     height: 52px;
     font-weight: 700;
     position: absolute;
-    top: -150px;
+    top: -95px;
     left: 70px;
+    /* top: -150px;
+    left: 70px; */
     background-color: #ff9f1a;
   } */
   
@@ -3319,20 +3680,85 @@ footer .copy span {
     padding-bottom: 10px;
   }
 
+ 
+
+  .sec7 {
+    /* padding: 0; */
+    padding: 16px 0px 0px;
+    width: 100%;
+    height: 145px;
+    box-sizing: border-box;
+    background-color: #F0EDE5;
+  }
+
+  .sec7 .outer {
+   width: 100%;
+   height: 100px;
+   background-color: #fff;
+  }
   
-  
-.sec7 {
+  .sec7 .container {
+    /* width: 990px; */
+    width: calc(100% - 20px);
+    height: 88px;
+    margin: 0 auto;
+    padding-top: 0px;
+    background-color:#F7F8F8;
+    position: relative;
+  }
+
+ .sec7 .container .swiper-container {
+   display: block;
+   width: 820px;
+   margin:  8px auto;
+   height: 88px;
+   overflow: hidden;
+   background-color: #F7F8F8;
+ }
+ 
+ .sec7 .container .swiper-container .swiper-wrapper {
+   margin-top: 16px;
+   width: 197px;
+   height: 88px;
+ }
+
+ .sec7 .swiper-button-prev, .swiper-button-next {
+   width: 26px;
+   height: 26px;
+   font-size: 12px;
+   color: #fff;
+   border-radius: 13px;
+   background-color: #ccc;
+ }
+
+ .sec7 .swiper-button-prev {
+   position: absolute;
+   top: 52px;
+   left: calc(50% - 460px);
+ }
+
+ .sec7 .swiper-button-next {
+   position: absolute;
+   top: 52px;
+   right: calc(50% - 460px);
+ }
+
+
+/* .sec7 {
   padding-top: 25px;
   width: 100%;
   height: 130px;
   background-color: #F0EDE5;
 }
 
+.sec7 .outer {
+  width: calc(100% - 20px);
+}
+
 .sec7 .container {
   height: 90px;
   width: 990px;
   margin: 0 auto;
-  /* width: 100%; */
   padding-top: 15px;
   background-color: #F7F8F8;
   position: relative;
@@ -3340,11 +3766,19 @@ footer .copy span {
 
 .sec7 .container .swiper-container {
   display: block;
-  width: 648px;
+  width: 990pxpx;
+  height: 90px;
   margin:  8px auto;
-  height: 57px;
   overflow: hidden;
 }
+
+.sec7 .container .swiper-container .swiper-wrapper {
+  display: block;
+  margin:  8px auto;
+  width: 830px;
+  height: 55px;
+} */
+
 /* 
 .sec7 .swiper-button-prev, .swiper-button-next {
   width: 26px;
@@ -3382,6 +3816,10 @@ footer {
   background-color:#000055;
   padding-top: 18px;
   position: relative;
+}
+
+footer .outer {
+  display: flex;
 }
 
 footer .outer {

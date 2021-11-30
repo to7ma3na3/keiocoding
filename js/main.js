@@ -22,7 +22,7 @@
   });
 
 
-  //メインメニュー・タブメニュー
+  // メインメニュー・故障中
   // const mitms = document.querySelectorAll('#main-menu .items .item');
   // const mctts = document.querySelectorAll('#main-menu .menu-content');
 
@@ -42,6 +42,10 @@
   //   });
   // });
 
+
+
+  // メインメニュー個別動作OK
+
   const itm1 = document.getElementById('rainyuin1');
   const itm2 = document.getElementById('keiougijuku-ni1');
   const itm3 = document.getElementById('iryoukankei1');
@@ -55,7 +59,6 @@
   const dn3 = document.querySelector('.down3');
   const up3 = document.querySelector('.up3');
  
-
   itm1.addEventListener('click', () => {
     ctt1.classList.toggle('show');
     dn1.classList.toggle('on');
@@ -73,29 +76,28 @@
   });
  
 
-
   
 
 
-  // busi-info（重複の修正中）
-  // const cur1 = document.querySelector('.cur1');
-  // const con1 = document.querySelector('.con1');
+  // busi-info
+  // モバイル用OK
+  const cur1 = document.querySelector('.cur1');
+  const con1 = document.querySelector('.con1');
+  cur1.addEventListener('click', () => {
+    con1.classList.toggle('appear');
+  });
 
-  // cur1.addEventListener('click', () => {
-  //   con1.classList.toggle('appear');
-  // });
-  // const cur2 = document.querySelector('.cur2');
-  // const con2 = document.querySelector('.con2');
+  const cur2 = document.querySelector('.cur2');
+  const con2 = document.querySelector('.con2');
+  cur2.addEventListener('click', () => {
+    con2.classList.toggle('appear');
+  });
 
-  // cur2.addEventListener('click', () => {
-  //   con2.classList.toggle('appear');
-  // });
-  // const cur3 = document.querySelector('.cur3');
-  // const con3 = document.querySelector('.con3');
-
-  // cur3.addEventListener('click', () => {
-  //   con3.classList.toggle('appear');
-  // });
+  const cur3 = document.querySelector('.cur3');
+  const con3 = document.querySelector('.con3');
+  cur3.addEventListener('click', () => {
+    con3.classList.toggle('appear');
+  });
 
 }
   
@@ -231,6 +233,57 @@
 
   draw();
 }
+  
+// {
+//   function draw() {
+//     const canvas = document.querySelector('.b1');
+//     if (typeof canvas.getContext === 'undefined') {
+//       return;
+//     }
+//     const ctx = canvas.getContext('2d');
+
+//     ctx.beginPath();
+//     ctx.moveTo(15, 10);
+//     ctx.lineTo(7, 12);
+//     ctx.lineTo(7, 8);
+//     ctx.lineTo(15, 10);
+//     ctx.fillStyle= '#fff';
+//     ctx.fill();
+
+//     ctx.beginPath();
+//     ctx.arc(10, 10, 8, 0, 2 * Math.PI);
+//     ctx.strokeStyle= '#fff';
+//     ctx.stroke();
+//   }
+
+//   draw();
+// }
+
+// {
+//   function draw() {
+//     const canvas = document.querySelector('.b2');
+//     if (typeof canvas.getContext === 'undefined') {
+//       return;
+//     }
+//     const ctx = canvas.getContext('2d');
+
+//     ctx.beginPath();
+//     ctx.moveTo(15, 10);
+//     ctx.lineTo(7, 12);
+//     ctx.lineTo(7, 8);
+//     ctx.lineTo(15, 10);
+//     ctx.fillStyle= '#fff';
+//     ctx.fill();
+
+//     ctx.beginPath();
+//     ctx.arc(10, 10, 8, 0, 2 * Math.PI);
+//     ctx.strokeStyle= '#fff';
+//     ctx.stroke();
+//   }
+
+//   draw();
+// }
+
 
  // 大切なお知らせ・タブメニュー
 {
