@@ -2971,77 +2971,6 @@ footer .copy span {
     margin: 0 auto;
     display: flex;
   }
-/*   
-  .sec1 .pink {
-    display: block;
-    width: 167px;
-    height: 130px;
-    background-color: #E17D7D;
-  }
-
-  .sec1 .pink > h2 > span {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 800;
-  }
-  
-  .sec1 .pink > h2 {
-    font-size: 14px;
-    font-weight: 700;
-    font-weight: 400;
-    height: 130px;
-    padding-top: 20px;
-    text-align: center;
-    color: #fff;
-    box-sizing: border-box;
-  }
-
-  .sec1 .pink > h2::before {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    position: relative;
-    top:30px;
-    left: 14px;
-  }
-
-  .sec1 .cotainer ul {
-    width: calc(100% - 167px);
-    height: 130px;
-    background-color:#E8E8E8;
-  }
-
-  .sec1 .cotainer li {
-    margin: 10px 10px 20px;
-    display: flex;
-    padding-left: 10px;
-  }
-  
-  .sec1 .cotainer li dt span {
-    display: block;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-  }
-  
-  .sec1 .cotainer li dd a {
-    padding-left: 20px;
-    display: block;
-    height: 24px;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 24px;
-    color: #245dc1;
-    font-size: 14px;
-  }
-  
-  .sec1 .cotainer li dd a:hover {
-    text-decoration: none;
-  } */
 
 
   .sec2 {
@@ -3053,41 +2982,6 @@ footer .copy span {
     width: 990px;
     margin: 0 auto;
   }
-/*   
-  .sec2 ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .sec2 ul li {
-    display: block;
-    width: calc((100% - 0px) / 4); 
-    height: 177px;
-    list-style: none;
-    margin-bottom: 0px;
-  }
-  
-  .sec2 ul li a {
-    display: block;
-    margin: 0px;
-    text-decoration: none;
-  }
-  
-  .sec2 ul li div {
-    padding: 20px 0px;
-    border: 1px solid #ddd;
-    text-align: center;
-  }
-
-  .sec2 ul li div p {
-    font-size: 21px;
-    color: #000;
-  }
-  
-  .sec2 ul li div img {
-    width: 160px;
-  }
-   */
 
 
    .sec3 {
@@ -3133,12 +3027,10 @@ footer .copy span {
   
   .sec3 ul li:nth-child(1) a {
     border-left: 1px solid #fff;
-    /* background-color: #ff9; */
   }
   
   .sec3 ul li:nth-child(3) a {
     border-right: 1px solid #fff;
-    /* background-color: #ff9; */
   }
 
 
@@ -3208,6 +3100,52 @@ footer .copy span {
     border-top: 3px solid rgb(2, 2, 71);
     background-color: #fff;
   }
+
+  
+  .sec4 dl .tab .sp {
+    display: none;
+  }
+
+  .sec4 dl .tab .pc {
+    display: block;
+    padding: 0px;
+    width: 33.3%;
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+    color: #333333;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 10px;
+    border-right:1px solid #999 ;
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 30%);
+  }
+  
+  /* .sec4 dl .tab .pc:last-child {
+    border-right:1px solid transparent;
+  } */
+
+  .sec4 dl .tab .pc1 {
+    display: block;
+    background-color: transparent;
+  }
+  
+  .sec4 dl .tab .pc2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 33.3%;
+    background-color: transparent;
+  }
+  
+  .sec4 dl .tab .pc3 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 66.6%;
+    background-color: transparent;
+  }
+
  
   .sec4 dl .tab .content {
     padding-top: 30px;
