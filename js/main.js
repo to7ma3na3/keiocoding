@@ -46,12 +46,15 @@
 
   // メインメニュー個別動作OK
 
-  const itm1 = document.getElementById('rainyuin1');
-  const itm2 = document.getElementById('keiougijuku-ni1');
-  const itm3 = document.getElementById('iryoukankei1');
-  const ctt1 = document.getElementById('rainyuin2');
-  const ctt2 = document.getElementById('keiougijuku-ni2');
-  const ctt3 = document.getElementById('iryoukankei2');
+  const itm1sp = document.querySelector('#rainyuin1-sp');
+  const itm1pc = document.querySelector('#rainyuin1-pc a');
+  const itm2sp = document.querySelector('#keiougijuku-ni1-sp');
+  const itm2pc = document.querySelector('#keiougijuku-ni1-pc a');
+  const itm3sp = document.querySelector('#iryoukankei1-sp');
+  const itm3pc = document.querySelector('#iryoukankei1-pc a');
+  const ctt1 = document.querySelector('#rainyuin2');
+  const ctt2 = document.querySelector('#keiougijuku-ni2');
+  const ctt3 = document.querySelector('#iryoukankei2');
   const dn1 = document.querySelector('.down1');
   const up1 = document.querySelector('.up1');
   const dn2 = document.querySelector('.down2');
@@ -59,22 +62,38 @@
   const dn3 = document.querySelector('.down3');
   const up3 = document.querySelector('.up3');
  
-  itm1.addEventListener('click', () => {
+  itm1sp.addEventListener('click',() => {
+    itm1sp.classList.toggle('on');
     ctt1.classList.toggle('show');
     dn1.classList.toggle('on');
     up1.classList.toggle('on');
   });
-  itm2.addEventListener('click', () => {
+  itm2sp.addEventListener('click', () => {
+    itm2sp.classList.toggle('on');
     ctt2.classList.toggle('show');
     dn2.classList.toggle('on');
     up2.classList.toggle('on');
   });
-  itm3.addEventListener('click', () => {
+  itm3sp.addEventListener('click', () => {
+    itm3sp.classList.toggle('on');
     ctt3.classList.toggle('show');
     dn3.classList.toggle('on');
     up3.classList.toggle('on');
   });
- 
+  
+  itm1pc.addEventListener('mouseover',() => {
+    itm1pc.classList.toggle('on');
+    ctt1.classList.toggle('show');
+  });
+  itm2sp.addEventListener('mouseover', () => {
+    itm2sp.classList.toggle('on');
+    ctt2.classList.toggle('show');
+  });
+  itm3sp.addEventListener('mouseover', () => {
+    itm3sp.classList.toggle('on');
+    ctt3.classList.toggle('show');
+  });
+  
 
   
 
@@ -98,6 +117,7 @@
   cur3.addEventListener('click', () => {
     con3.classList.toggle('appear');
   });
+
 
 }
   
@@ -287,22 +307,22 @@
 
  // 大切なお知らせ・タブメニュー
 {
-  const currents = document.querySelectorAll('.tabBar .tab .current');
+  const pcs = document.querySelectorAll('.tabBar .tab .pc');
   const contents = document.querySelectorAll('.tabBar .tab .content');
 
-  currents.forEach(clickedCur => {
-    clickedCur.addEventListener('click', e => {
+  pcs.forEach(clickedPc => {
+    clickedPc.addEventListener('click', e => {
       e.preventDefault();
 
-      currents.forEach(cur => {
-        cur.classList.remove('on');
+      pcs.forEach(pc => {
+        pc.classList.remove('on');
       });
-      clickedCur.classList.add('on');
+      clickedPc.classList.add('on');
 
       contents.forEach(con => {
         con.classList.remove('on');
       });
-      document.getElementById(clickedCur.dataset.id).classList.add('on');
+      document.getElementById(clickedPc.dataset.id).classList.add('on');
     });
   });
 
