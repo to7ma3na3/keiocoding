@@ -631,7 +631,7 @@ header #main-menu .menu-content .kadan a img {
 
 .sec2 ul li a {
   display: block;
-  margin: 0px 12px 5px 10px;
+  margin: 0px 16px 10px 10px;
   text-decoration: none;
 }
 
@@ -1457,7 +1457,7 @@ footer .copy span {
   header #main-menu .menu-content {
     position: fixed;
     top: 190px;
-    bottom: 2050px;
+    bottom: 2400px;
     right: 0;
     left: 0;
     opacity: 0;
@@ -1484,7 +1484,7 @@ footer .copy span {
     pointer-events: auto;
     opacity: 1;
     background: #fff;
-    z-index: 10;
+    z-index: 30;
   }
   
   header #main-menu #rainyuin2 .joudan {
@@ -1512,6 +1512,7 @@ footer .copy span {
     opacity: 1;
     background-color: #fff;
     /* transform: translateY(0); */
+    z-index: 30;
   }
 
   header #main-menu #keiougijuku-ni2 .joudan {
@@ -1536,6 +1537,7 @@ footer .copy span {
     pointer-events: auto;
     opacity: 1;
     background-color: #fff;
+    z-index: 30;
   }
   
   header #main-menu #iryoukankei2 .joudan {
@@ -2731,7 +2733,7 @@ footer .copy span {
   header #main-menu .menu-content {
     position: fixed;
     top: 190px;
-    bottom: 2050px;
+    bottom: 2300px;
     right: 0;
     left: 0;
     opacity: 0;
@@ -2758,7 +2760,7 @@ footer .copy span {
     pointer-events: auto;
     opacity: 1;
     background: #fff;
-    z-index: 10;
+    z-index: 30;
   }
   
   header #main-menu #rainyuin2 .joudan {
@@ -2786,6 +2788,7 @@ footer .copy span {
     opacity: 1;
     background-color: #fff;
     /* transform: translateY(0); */
+    z-index: 30;
   }
 
   header #main-menu #keiougijuku-ni2 .joudan {
@@ -2810,6 +2813,7 @@ footer .copy span {
     pointer-events: auto;
     opacity: 1;
     background-color: #fff;
+    z-index: 30;
   }
   
   header #main-menu #iryoukankei2 .joudan {
