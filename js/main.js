@@ -307,8 +307,8 @@
 
  // 大切なお知らせ・タブメニュー
 {
-  const pcs = document.querySelectorAll('.tabBar .tab .pc');
-  const contents = document.querySelectorAll('.tabBar .tab .content');
+  const pcs = document.querySelectorAll('.sec4-2 .tabBar .tab .pc');
+  const contents = document.querySelectorAll('.sec4-2 .tabBar .tab .content');
 
   pcs.forEach(clickedPc => {
     clickedPc.addEventListener('click', e => {
