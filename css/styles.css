@@ -414,7 +414,7 @@ header #main-menu .item a .up3.on {
 header #main-menu .menu-content {
   position: fixed;
   top: 134px;
-  bottom: 2300px;
+  bottom: auto;
   right: 0;
   left: 0;
   opacity: 0;
@@ -1383,9 +1383,9 @@ footer .copy span {
   }
 
   header #main-menu .container {
-    padding-top: 2px;
+    padding-top: 0px;
     max-width: 980px;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
   }
   
@@ -1396,8 +1396,22 @@ footer .copy span {
     display: flex;
   }
   
+  header #main-menu .item:nth-child(2)::before {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #6e6c95;
+  }
+  header #main-menu .item:nth-child(3)::before {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #6e6c95;
+  }
+
   header #main-menu .item {
     width: 33.3%;
+    height: 52px;
     display: flex;
     align-items: center;
     color: #fff;
@@ -1428,11 +1442,7 @@ footer .copy span {
     line-height: 19px;
     height: 19px;
     color: #fff;
-    border-right: 1px solid #fff;
-  }
-  
-  header #main-menu .item:last-child p:first-child {
-    border-right: 1px solid transparent;
+    /* border-right: 1px solid #fff; */
   }
 
   header #main-menu .item:nth-child(2) .sp {
@@ -1509,8 +1519,6 @@ footer .copy span {
     position: static;
     opacity: 0;
     pointer-events: none;
-    /* transform: translateY(-200px);
-    transition: transform .5s; */
   }
   
   header #main-menu #keiougijuku-ni2.show {
@@ -1521,7 +1529,6 @@ footer .copy span {
     pointer-events: auto;
     opacity: 1;
     background-color: #fff;
-    /* transform: translateY(0); */
     z-index: 30;
   }
 
@@ -2335,7 +2342,8 @@ footer .copy span {
  
   .sec7 .container .swiper-container {
     display: block;
-    width: 606px;
+    width: 630px;
+    /* width: 606px; */
     margin:  8px auto;
     height: 88px;
     overflow: hidden;
@@ -2344,7 +2352,7 @@ footer .copy span {
   
   .sec7 .container .swiper-container .swiper-wrapper {
     margin-top: 16px;
-    width: 197px;
+    width: 200px;
     height: 88px;
   }
 
@@ -2362,16 +2370,29 @@ footer .copy span {
     top: 52px;
     left: 10px;
   }
-
-  .sec7 .swiper-button-prev::after {
-    display: none;
-  } 
-
+  
   .sec7 .swiper-button-next {
     position: absolute;
     top: 52px;
     right: 10px;
   }
+  
+  .sec7 .swiper-button-prev img {
+    display: block;
+    width: 46px;
+    position: absolute;
+    top: -6px;
+  } 
+  .sec7 .swiper-button-next img {
+    display: block;
+    width: 46px;
+    position: absolute;
+    top: -6px;
+  } 
+
+  .sec7 .swiper-button-prev::after {
+    display: none;
+  } 
 
   .sec7 .swiper-button-next::after {
     display: none;
@@ -2380,27 +2401,24 @@ footer .copy span {
 
   footer {
     width: 100%;
-    height: 62px;
-    box-sizing: border-box;
+    height: 40px;
+    /* box-sizing: border-box; */
     background-color:#000055;
     padding-top: 18px;
     position: relative;
   }
 
-  /* footer .outer {
-    width: 330px;
-  } */
-
   footer .container {
-    padding-bottom: px;
+    padding-bottom: 0px;
     display: flex;
   }
 
   footer .container li {
     width: auto;
     list-style: none;
+    padding-bottom: 0px;
+    box-sizing: border-box;
     border-right: 1px solid #fff;
-    padding-bottom: 4px;
   }
 
   footer .container li:last-child {
@@ -2415,16 +2433,16 @@ footer .copy span {
     margin: 0px 12px;
   }
 
-  footer .container > div a:hover {
+  footer .container li a:hover {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   footer .copy {
     /* padding: 0px 10px 15px; */
     /* text-align: end; */
     position: absolute;
-    bottom: 0px;
+    bottom: -4px;
     right: 0px;
   }
 
@@ -2636,6 +2654,11 @@ footer .copy span {
 
 
   header #main-menu {
+    width: 100%;
+    /* background-color: yellowgreen; */
+  }
+
+  header #main-menu .container1 {
     height: 52px;
     width: 100%;
     background-color: rgb(4, 4, 86);
@@ -2644,17 +2667,30 @@ footer .copy span {
   header #main-menu .container1 {
     padding-top: 2px;
     max-width: 980px;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
   }
   
   header #main-menu .items {
     list-style: none;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     display: flex;
   }
   
+  header #main-menu .item:nth-child(1)::before {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #6e6c95;
+  }
+  header #main-menu .item:nth-child(3)::after {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #6e6c95;
+  }
+
   header #main-menu .item {
     width: 33.3%;
     display: flex;
@@ -2687,14 +2723,14 @@ footer .copy span {
     line-height: 19px;
     height: 19px;
     color: #fff;
-    border-right: 1px solid #fff;
+    border-right: 1px solid transparent;
   }
-  header #main-menu .item:last-child p:first-child {
+  /* header #main-menu .item:last-child p:first-child {
     border-right: 1px solid #fff;
-  }
-  header #main-menu .item:first-child p:first-child {
+  } */
+  /* header #main-menu .item:first-child p:first-child {
     border-left: 1px solid #fff;
-  }
+  } */
 
 
   header #main-menu .item:nth-child(2) .sp {
@@ -2728,23 +2764,32 @@ footer .copy span {
   header #main-menu .container2 {
     display: block;
     width: 990px;
-    margin: 0 auto;
-  }
-  
-  header #main-menu .menu-content {
-    width: 990px;
     position: fixed;
-    /* top: auto; */
-    top: 290px;
+    top: 3px;
     bottom: auto;
+    right: auto;
     left: calc((100% - 990px) / 2);
-    /* right: calc((100% - 990px) / 2); */
-    /* right: auto; */
-    right: 100px;
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
     transition: opacity .5s;
+    box-shadow: 1px 2px 4px transparent;
+    z-index: 30;
+  }
+
+  header #main-menu .container2 .menu-content {
+    pointer-events: none;
+    transition: opacity 0.5s;
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity .5s; 
+    box-shadow: 1px 2px 4px transparent; 
     box-shadow: 1px 2px 4px rgb(0 0 0 / 30%);
+    z-index: 40;
   }
 
   header #main-menu .menu-content .joudan {
@@ -2757,17 +2802,9 @@ footer .copy span {
     border: 1px solid #ccc;
   }
   
-  header #main-menu #rainyuin2 {
-    position: relative;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s;
-  }
-  
-  header #main-menu #rainyuin2.show {
+  header #main-menu .container2 .menu-content.show {
     position: absolute;
     top: 190px; 
-    /* width: 100%; */
     height: auto;
     pointer-events: auto;
     opacity: 1;
@@ -2775,76 +2812,19 @@ footer .copy span {
     z-index: 30;
   }
   
-  header #main-menu #rainyuin2 .joudan {
+  header #main-menu .container2 .menu-content .joudan {
     display: flex;
-  }
+  } 
 
-  header #main-menu #rainyuin2 .joudan .part {
-    width: 330px;
-  }
-
-  header #main-menu #keiougijuku-ni2 {
-    position: static;
-    opacity: 0;
-    pointer-events: none;
-    /* transform: translateY(-200px);
-    transition: transform .5s; */
-  }
   
-  header #main-menu #keiougijuku-ni2.show {
-    position: absolute;
-    top: 190px;
-    /* width: 100%; */
-    height: auto;
-    pointer-events: auto;
-    opacity: 1;
-    background-color: #fff;
-    /* transform: translateY(0); */
-    z-index: 30;
-  }
-
-  header #main-menu #keiougijuku-ni2 .joudan {
-    display: flex;
-  }
-
-  header #main-menu #keiougijuku-ni2 .joudan .part {
+  header #main-menu .container2 .menu-content .joudan .part {
     width: 330px;
   }
   
-  header #main-menu #iryoukankei2 {
-    position: static;
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  header #main-menu #iryoukankei2.show {
-    position: absolute;
-    top: 190px;
-    /* width: 100%; */
-    height: auto;
-    pointer-events: auto;
-    opacity: 1;
-    background-color: #fff;
-    z-index: 30;
-  }
-  
-  header #main-menu #iryoukankei2 .joudan {
-    display:flex;
-  }
-
-  header #main-menu #iryoukankei2 .joudan .part {
-    width: 330px;
-  }
-
   header #main-menu .menu-content .part {
     display: block;
     width: 330px;
     height: auto;
-  }
-
-  header #main-menu #rainyuin2 .center {
-    display: block;
-    width: 330px;
   }
 
   header #main-menu .menu-content h3 {
@@ -3339,9 +3319,6 @@ footer .copy span {
   }
 
 
-
-
-
   /* ここから */
 /* 
   .sec6 {
@@ -3779,16 +3756,14 @@ footer .copy span {
  }
 
 
+
+
 footer {
   width: 100%;
   height: 45px;
   background-color:#000055;
   padding-top: 18px;
   position: relative;
-}
-
-footer .outer {
-  display: flex;
 }
 
 footer .outer {
@@ -3799,12 +3774,52 @@ footer .outer {
 }
 
 footer .container {
+  height: 20px;
   display: flex;
   position: static;
   margin-top: 5px;
 }
 
-footer .container > div {
+footer .container {
+  /* padding-bottom: 0px; */
+  display: flex;
+}
+
+footer .container li {
+  width: auto;
+  list-style: none;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  border-right: 1px solid #fff;
+}
+/* footer .container li {
+  width: auto;
+  list-style: none;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  border-right: 1px solid #fff;
+  background-color: thistle;
+} */
+
+footer .container li:last-child {
+  border-right: 1px solid transparent;
+}
+
+footer .container li a {
+  text-decoration: underline;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+  margin: 0px 12px;
+}
+
+footer .container > li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/* footer .container > div {
   width: auto;
   height: 12px;
   border-right: 1px solid #fff;
@@ -3821,15 +3836,33 @@ footer .container > div a {
 footer .container > div a:hover {
   cursor: pointer;
   text-decoration: none;
-}
+} */
 
-footer .copy {
-  position: static;
-  margin-top: 5px;
-} 
+/* footer .copy {
+  position: absolute;
+  bottom: -4px;
+  right: 0px;
+}
 
 footer .copy span {
   font-size: 11px;
+  color: #fff;
+} */
+
+footer .copy {
+  display: block;
+  padding: 0;
+  height: 20px;
+  width: auto;
+  position: static;
+  margin: 0px;
+} 
+
+footer .copy span {
+  display: block;
+  font-size: 11px;
+  line-height: 20px;
+  padding: 0;
   color: #fff;
 }
 

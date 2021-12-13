@@ -80,22 +80,54 @@
     dn3.classList.toggle('on');
     up3.classList.toggle('on');
   });
+
   
   itm1pc.addEventListener('mouseover',() => {
-    itm1pc.classList.toggle('on');
-    ctt1.classList.toggle('show');
+    itm1pc.classList.add('on');
+    ctt1.classList.add('show');
+  });
+  itm1pc + ctt1.addEventListener('mouseout',() => {
+    itm1pc.classList.remove('on');
+    ctt1.classList.remove('show');
   });
   itm2sp.addEventListener('mouseover', () => {
-    itm2sp.classList.toggle('on');
-    ctt2.classList.toggle('show');
+    itm2sp.classList.add('on');
+    ctt2.classList.add('show');
+  });
+  itm2sp + ctt2.addEventListener('mouseout', () => {
+    itm2sp.classList.remove('on');
+    ctt2.classList.remove('show');
   });
   itm3sp.addEventListener('mouseover', () => {
-    itm3sp.classList.toggle('on');
-    ctt3.classList.toggle('show');
+    itm3sp.classList.add('on');
+    ctt3.classList.add('show');
+  });
+  itm3sp + ctt3.addEventListener('mouseout', () => {
+    itm3sp.classList.remove('on');
+    ctt3.classList.remove('show');
   });
   
 
   
+  //メインメニューの✕
+  const batsu1 = document.querySelector('#main-menu .container2 #rainyuin2 .kadan .batsu1');
+  const content1 = document.querySelector('#main-menu .container2 #rainyuin2');
+  batsu1.addEventListener('click', () => {
+    content1.style.display ='none';
+  });
+  
+  const batsu2 = document.querySelector('#main-menu .container2 #keiougijuku-ni2 .kadan .batsu2');
+  const content2 = document.querySelector('#main-menu .container2 #keiougijuku-ni2');
+  batsu2.addEventListener('click', () => {
+    content2.style.display ='none';
+  });
+  
+  const batsu3 = document.querySelector('#main-menu .container2 #iryoukankei2 .kadan .batsu3');
+  const content3 = document.querySelector('#main-menu .container2 #iryoukankei2');
+  batsu3.addEventListener('click', () => {
+    content3.style.display ='none';
+  });
+
 
 
   // busi-info
