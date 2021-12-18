@@ -44,90 +44,113 @@
 
 
 
-  // メインメニュー個別動作OK
+  // メインメニューsp用OK
 
-  const itm1sp = document.querySelector('#rainyuin1-sp');
-  const itm1pc = document.querySelector('#rainyuin1-pc a');
-  const itm2sp = document.querySelector('#keiougijuku-ni1-sp');
-  const itm2pc = document.querySelector('#keiougijuku-ni1-pc a');
-  const itm3sp = document.querySelector('#iryoukankei1-sp');
-  const itm3pc = document.querySelector('#iryoukankei1-pc a');
-  const ctt1 = document.querySelector('#rainyuin2');
-  const ctt2 = document.querySelector('#keiougijuku-ni2');
-  const ctt3 = document.querySelector('#iryoukankei2');
+  const itm1sp = document.querySelector('#main-menu #rainyuin1-sp');
+  const itm2sp = document.querySelector('#main-menu #keiougijuku-ni1-sp');
+  const itm3sp = document.querySelector('#main-menu #iryoukankei1-sp');
+  const ctt1sp = document.querySelector('#main-menu #rainyuin2-sp');
+  const ctt2sp = document.querySelector('#main-menu #keiougijuku-ni2-sp');
+  const ctt3sp = document.querySelector('#main-menu #iryoukankei2-sp');
   const dn1 = document.querySelector('.down1');
   const up1 = document.querySelector('.up1');
   const dn2 = document.querySelector('.down2');
   const up2 = document.querySelector('.up2');
   const dn3 = document.querySelector('.down3');
   const up3 = document.querySelector('.up3');
+  const batsu1 = document.querySelector('#rainyuin2-sp .kadan .batsu1');
+  const batsu2 = document.querySelector('#keiougijuku-ni2-sp .kadan .batsu2');
+  const batsu3 = document.querySelector('#iryoukankei2-sp .kadan .batsu3');
  
   itm1sp.addEventListener('click',() => {
     itm1sp.classList.toggle('on');
-    ctt1.classList.toggle('show');
+    ctt1sp.classList.toggle('show');
     dn1.classList.toggle('on');
     up1.classList.toggle('on');
   });
   itm2sp.addEventListener('click', () => {
     itm2sp.classList.toggle('on');
-    ctt2.classList.toggle('show');
+    ctt2sp.classList.toggle('show');
     dn2.classList.toggle('on');
     up2.classList.toggle('on');
   });
   itm3sp.addEventListener('click', () => {
     itm3sp.classList.toggle('on');
-    ctt3.classList.toggle('show');
+    ctt3sp.classList.toggle('show');
     dn3.classList.toggle('on');
     up3.classList.toggle('on');
   });
 
-  
-  itm1pc.addEventListener('mouseover',() => {
-    itm1pc.classList.add('on');
-    ctt1.classList.add('show');
-  });
-  itm1pc + ctt1.addEventListener('mouseout',() => {
-    itm1pc.classList.remove('on');
-    ctt1.classList.remove('show');
-  });
-  itm2sp.addEventListener('mouseover', () => {
-    itm2sp.classList.add('on');
-    ctt2.classList.add('show');
-  });
-  itm2sp + ctt2.addEventListener('mouseout', () => {
-    itm2sp.classList.remove('on');
-    ctt2.classList.remove('show');
-  });
-  itm3sp.addEventListener('mouseover', () => {
-    itm3sp.classList.add('on');
-    ctt3.classList.add('show');
-  });
-  itm3sp + ctt3.addEventListener('mouseout', () => {
-    itm3sp.classList.remove('on');
-    ctt3.classList.remove('show');
-  });
-  
-
-  
-  //メインメニューの✕
-  const batsu1 = document.querySelector('#main-menu .container2 #rainyuin2 .kadan .batsu1');
-  const content1 = document.querySelector('#main-menu .container2 #rainyuin2');
   batsu1.addEventListener('click', () => {
-    content1.style.display ='none';
+    itm1sp.classList.toggle('on');
+    ctt1sp.classList.toggle('show');
   });
-  
-  const batsu2 = document.querySelector('#main-menu .container2 #keiougijuku-ni2 .kadan .batsu2');
-  const content2 = document.querySelector('#main-menu .container2 #keiougijuku-ni2');
   batsu2.addEventListener('click', () => {
-    content2.style.display ='none';
+    itm2sp.classList.toggle('on');
+    ctt2sp.classList.toggle('show');
   });
-  
-  const batsu3 = document.querySelector('#main-menu .container2 #iryoukankei2 .kadan .batsu3');
-  const content3 = document.querySelector('#main-menu .container2 #iryoukankei2');
   batsu3.addEventListener('click', () => {
-    content3.style.display ='none';
+    itm3sp.classList.toggle('on');
+    ctt3sp.classList.toggle('show');
   });
 
+
+
+  //メインメニュー㍶用
+  const itm1pc = document.querySelector('#rainyuin1');
+  const itm2pc = document.querySelector('#keiougijuku-ni1');
+  const itm3pc = document.querySelector('#iryoukankei1');
+  const ctt1pc = document.querySelector('#rainyuin2');
+  const ctt2pc = document.querySelector('#keiougijuku-ni2');
+  const ctt3pc = document.querySelector('#iryoukankei2');
+  const pc1 = document.querySelector('#pc1');
+  const pc2 = document.querySelector('#pc2');
+  const pc3 = document.querySelector('#pc3');
+
+  const batsu1pc = document.querySelector('#rainyuin2 .kadan .batsu1pc');
+  const batsu2pc = document.querySelector('#keiougijuku-ni2 .kadan .batsu2pc');
+  const batsu3pc = document.querySelector('#iryoukankei2 .kadan .batsu3pc');
+  
+  pc1.addEventListener('mouseover',() => {
+    itm1pc.classList.add('on');
+    ctt1pc.classList.add('show');
+  });
+  pc1.addEventListener('mouseout',() => {
+    itm1pc.classList.remove('on');
+    ctt1pc.classList.remove('show');
+  });
+
+  pc2.addEventListener('mouseover', () => {
+    itm2pc.classList.add('on');
+    ctt2pc.classList.add('show');
+  });
+  pc2.addEventListener('mouseout', () => {
+    itm2pc.classList.remove('on');
+    ctt2pc.classList.remove('show');
+  });
+
+  pc3.addEventListener('mouseover', () => {
+    itm3pc.classList.add('on');
+    ctt3pc.classList.add('show');
+  });
+  pc3.addEventListener('mouseout', () => {
+    itm3pc.classList.remove('on');
+    ctt3pc.classList.remove('show');
+  });
+
+  batsu1pc.addEventListener('click', () => {
+    itm1pc.classList.toggle('on');
+    ctt1pc.classList.toggle('show');
+  });
+  batsu2pc.addEventListener('click', () => {
+    itm2pc.classList.toggle('on');
+    ctt2pc.classList.toggle('show');
+  });
+  batsu3pc.addEventListener('click', () => {
+    itm3pc.classList.toggle('on');
+    ctt3pc.classList.toggle('show');
+  });
+ 
 
 
   // busi-info

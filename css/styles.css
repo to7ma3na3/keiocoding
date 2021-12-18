@@ -305,6 +305,11 @@ header #help {
   display: none;
 }
 
+
+header #main-menu-2 {
+  display: none;
+}
+
 header #main-menu {
   height: 50px;
   width: 100%;
@@ -494,6 +499,10 @@ header #main-menu .menu-content .kadan a img {
   top: 20px;
   right: 20px;
   color: #999;
+}
+
+header #main-menu-2 {
+  display: none;
 }
 
 
@@ -1152,7 +1161,6 @@ footer .copy span {
 
   body {
     width: 100%;
-    /* background-color: rgb(109, 245, 213); */
   }
 
   header #headerContent {
@@ -1171,39 +1179,16 @@ footer .copy span {
   }
   
   header #headerContent p img {
-    /* margin-top: 25px; */
     width: 200px;
     height: auto;
   }
 
 
   header #headerContent #menu-open {
-    /* position: absolute;
-    top: 13px;
-    right: 10px;
-    cursor: pointer; */
     display: none;
   }
 
   header #mobile-menu {
-    /* position: static; */
-
-    /* transform: translateX(0);
-    background-color: transparent;
-    pointer-events: auto; */
-
-    /* transform: translateX(100%);
-    position: fixed;
-    top: 16px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    opacity: 0.9;
-    pointer-events: none;
-    overflow: hidden;
-    transition: transform .5s;
-    width: 100%;
-    z-index: 20; */
     display: none;
   }
 
@@ -1228,7 +1213,6 @@ footer .copy span {
     line-height: 1;
     list-style: none;
     padding-left: 0px;
-    /* border-right: 1px solid #ccc; */
   }
   
   
@@ -1375,267 +1359,9 @@ footer .copy span {
     text-decoration: underline;
   }
 
+
   
-  header #main-menu {
-    height: 52px;
-    width: 100%;
-    background-color: rgb(4, 4, 86);
-  }
-
-  header #main-menu .container {
-    padding-top: 0px;
-    max-width: 980px;
-    height: auto;
-    margin: 0 auto;
-  }
-  
-  header #main-menu .items {
-    list-style: none;
-    width: 100%;
-    height: auto;
-    display: flex;
-  }
-  
-  header #main-menu .item:nth-child(2)::before {
-    content: '';
-    width: 1px;
-    height: 20px;
-    background-color: #6e6c95;
-  }
-  header #main-menu .item:nth-child(3)::before {
-    content: '';
-    width: 1px;
-    height: 20px;
-    background-color: #6e6c95;
-  }
-
-  header #main-menu .item {
-    width: 33.3%;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    border: 1px solid transparent;
-  }
-  
-  header #main-menu .item a {
-    height: 100%;
-    display: flex;
-    color: #fff;
-    line-height: 1.2;
-    padding: 0px;
-    text-decoration: none;
-  }
-
-  header #main-menu .item a.on {
-    cursor: pointer;
-    background-color: red;
-  }
-
-  header #main-menu .item p:first-child {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    padding: 0px;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 19px;
-    height: 19px;
-    color: #fff;
-    /* border-right: 1px solid #fff; */
-  }
-
-  header #main-menu .item:nth-child(2) .sp {
-    display: none;
-  }
-
-  header #main-menu .item:nth-child(2) .pc {
-    display: inline-block;
-    text-align: center;
-  }
-
-  header #main-menu .item a .down1.on {
-    display: none;
-  } 
-  header #main-menu .item a .up1.on {
-    display: none;
-  } 
-  header #main-menu .item a .down2.on {
-    display: none;
-  } 
-  header #main-menu .item a .up2.on {
-    display: none;
-  } 
-  header #main-menu .item a .down3.on {
-    display: none;
-  } 
-  header #main-menu .item a .up3.on {
-    display: none;
-  } 
-  
-  header #main-menu .menu-content {
-    position: fixed;
-    top: 190px;
-    bottom: auto;
-    right: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .5s;
-    box-shadow: 1px 2px 4px rgb(0 0 0 / 30%);
-  }
-
-  header #main-menu .menu-content .joudan div {
-    padding: 20px;
-  }
-  
-  header #main-menu #rainyuin2 {
-    position: relative;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s;
-  }
-  
-  header #main-menu #rainyuin2.show {
-    position: absolute;
-    top: 190px; 
-    width: 100%;
-    height: auto;
-    pointer-events: auto;
-    opacity: 1;
-    background: #fff;
-    z-index: 30;
-  }
-  
-  header #main-menu #rainyuin2 .joudan {
-    display: flex;
-  }
-
-  header #main-menu #rainyuin2 .joudan div {
-    width: 33%;
-  }
-
-  header #main-menu #keiougijuku-ni2 {
-    position: static;
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  header #main-menu #keiougijuku-ni2.show {
-    position: absolute;
-    top: 190px;
-    width: 100%;
-    height: auto;
-    pointer-events: auto;
-    opacity: 1;
-    background-color: #fff;
-    z-index: 30;
-  }
-
-  header #main-menu #keiougijuku-ni2 .joudan {
-    display: flex;
-  }
-
-  header #main-menu #keiougijuku-ni2 .joudan div {
-    width: 33%;
-  }
-  
-  header #main-menu #iryoukankei2 {
-    position: static;
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  header #main-menu #iryoukankei2.show {
-    position: absolute;
-    top: 190px;
-    width: 100%;
-    height: auto;
-    pointer-events: auto;
-    opacity: 1;
-    background-color: #fff;
-    z-index: 30;
-  }
-  
-  header #main-menu #iryoukankei2 .joudan {
-    display:flex;
-  }
-
-  header #main-menu #iryoukankei2 .joudan div {
-    width: 33%;
-  }
-
-  header #main-menu .menu-content .part {
-    display: block;
-    width: 33%;
-    height: auto;
-  }
-
-  header #main-menu #rainyuin2 .center {
-    display: block;
-    width: 33%;
-  }
-
-  header #main-menu .menu-content h3 {
-    padding-left: 10px;
-    display: inline-block;
-    height: 50px;
-    font-size: 23px;
-    font-weight: 200;
-    line-height: 50px;
-  }
-
-  header #main-menu .menu-content ul a {
-    text-decoration: underline;
-  }
-
-  header #main-menu .menu-content ul a:hover {
-    text-decoration: none;
-  }
-
-  header #main-menu .menu-content ul a li {
-    list-style: none;
-    padding-left: 0px;
-    margin-top: 5px;
-    width: 100%;
-    height: 25px;
-    line-height: 25px;
-    color: #245dc1;
-    border: 1px solid transparent;
-    position: relative;
-  }
-
-  header #main-menu .menu-content ul a li p {
-    line-height: 1.8;
-  }
-
-  header #main-menu .menu-content ul a li .fas {
-    position: absolute;
-    top: 15px;
-    left: 17px;
-    color: #999;
-    display: none;
-  }
-
-  header #main-menu .menu-content .kadan {
-    padding: 0px;
-    line-height: 50px;
-    width: 100%;
-    height: 50px;
-    border: 1px solid #ddd;
-    position: relative; 
-    background-color: #eee;
-  }
-
-  header #main-menu .menu-content .kadan a:hover {
-    text-decoration: none;
-  } 
-
-  header #main-menu .menu-content .kadan a img {
-    display: block;
-  }
-
-
+}
 
   .main-pic {
     width: 100%;
@@ -2343,7 +2069,6 @@ footer .copy span {
   .sec7 .container .swiper-container {
     display: block;
     width: 630px;
-    /* width: 606px; */
     margin:  8px auto;
     height: 88px;
     overflow: hidden;
@@ -2458,7 +2183,6 @@ footer .copy span {
     color: blue;
   }
 
-
   header #headerContent {
     display: block;
     width: 990px;
@@ -2478,7 +2202,6 @@ footer .copy span {
     width: 320px;
     height: auto;
   }
-
 
   header #headerContent #menu-open {
     display: none;
@@ -2651,240 +2374,6 @@ footer .copy span {
     text-decoration: underline;
   }
 
-
-
-  header #main-menu {
-    width: 100%;
-    /* background-color: yellowgreen; */
-  }
-
-  header #main-menu .container1 {
-    height: 52px;
-    width: 100%;
-    background-color: rgb(4, 4, 86);
-  }
-
-  header #main-menu .container1 {
-    padding-top: 2px;
-    max-width: 980px;
-    height: auto;
-    margin: 0 auto;
-  }
-  
-  header #main-menu .items {
-    list-style: none;
-    /* width: 100%; */
-    height: auto;
-    display: flex;
-  }
-  
-  header #main-menu .item:nth-child(1)::before {
-    content: '';
-    width: 1px;
-    height: 20px;
-    background-color: #6e6c95;
-  }
-  header #main-menu .item:nth-child(3)::after {
-    content: '';
-    width: 1px;
-    height: 20px;
-    background-color: #6e6c95;
-  }
-
-  header #main-menu .item {
-    width: 33.3%;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    border: 1px solid transparent;
-  }
-  
-  header #main-menu .item a {
-    height: 100%;
-    display: flex;
-    color: #fff;
-    line-height: 1.2;
-    padding: 0px;
-    text-decoration: none;
-  }
-
-  header #main-menu .item a.on {
-    cursor: pointer;
-    background-color: red;
-  }
-
-  header #main-menu .item p:first-child {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    padding: 0px;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 19px;
-    height: 19px;
-    color: #fff;
-    border-right: 1px solid transparent;
-  }
-  /* header #main-menu .item:last-child p:first-child {
-    border-right: 1px solid #fff;
-  } */
-  /* header #main-menu .item:first-child p:first-child {
-    border-left: 1px solid #fff;
-  } */
-
-
-  header #main-menu .item:nth-child(2) .sp {
-    display: none;
-  }
-
-  header #main-menu .item:nth-child(2) .pc {
-    display: inline-block;
-    text-align: center;
-  }
-
-  header #main-menu .item a .down1.on {
-    display: none;
-  } 
-  header #main-menu .item a .up1.on {
-    display: none;
-  } 
-  header #main-menu .item a .down2.on {
-    display: none;
-  } 
-  header #main-menu .item a .up2.on {
-    display: none;
-  } 
-  header #main-menu .item a .down3.on {
-    display: none;
-  } 
-  header #main-menu .item a .up3.on {
-    display: none;
-  } 
-
-  header #main-menu .container2 {
-    display: block;
-    width: 990px;
-    position: fixed;
-    top: 3px;
-    bottom: auto;
-    right: auto;
-    left: calc((100% - 990px) / 2);
-    opacity: 1;
-    pointer-events: none;
-    transition: opacity .5s;
-    box-shadow: 1px 2px 4px transparent;
-    z-index: 30;
-  }
-
-  header #main-menu .container2 .menu-content {
-    pointer-events: none;
-    transition: opacity 0.5s;
-    position: fixed;
-    top: 0;
-    bottom: auto;
-    right: 0;
-    left: 0;
-    opacity: 1;
-    pointer-events: none;
-    transition: opacity .5s; 
-    box-shadow: 1px 2px 4px transparent; 
-    box-shadow: 1px 2px 4px rgb(0 0 0 / 30%);
-    z-index: 40;
-  }
-
-  header #main-menu .menu-content .joudan {
-    width: 990px;
-  }
-
-  header #main-menu .menu-content .joudan .part {
-    width: 330px;
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
-  
-  header #main-menu .container2 .menu-content.show {
-    position: absolute;
-    top: 190px; 
-    height: auto;
-    pointer-events: auto;
-    opacity: 1;
-    background: #fff;
-    z-index: 30;
-  }
-  
-  header #main-menu .container2 .menu-content .joudan {
-    display: flex;
-  } 
-
-  
-  header #main-menu .container2 .menu-content .joudan .part {
-    width: 330px;
-  }
-  
-  header #main-menu .menu-content .part {
-    display: block;
-    width: 330px;
-    height: auto;
-  }
-
-  header #main-menu .menu-content h3 {
-    padding-left: 30px;
-    display: inline-block;
-    height: 50px;
-    font-size: 23px;
-    font-weight: 200;
-    line-height: 50px;
-  }
-
-  header #main-menu .menu-content ul a:hover {
-    text-decoration: none;
-  }
-
-  header #main-menu .menu-content ul li {
-    list-style: none;
-    padding-left: 15px;
-    margin-top: 5px;
-    /* width: 100%; */
-    height: 25px;
-    line-height: 25px;
-    color: #245dc1;
-    border: 1px solid transparent;
-    position: relative;
-  }
-  
-  header #main-menu .menu-content ul li a {
-    text-decoration: underline;
-  }
-
-  header #main-menu .menu-content ul li a:hover {
-    text-decoration: none;
-  }
-
-  header #main-menu .menu-content ul li .fas {
-    position: absolute;
-    top: 15px;
-    left: 17px;
-    color: #999;
-    display: none;
-  }
-
-  header #main-menu .menu-content .kadan {
-    padding: 0px;
-    line-height: 50px;
-    width: 990px;
-    height: 50px;
-    border: 1px solid #ddd;
-    position: relative; 
-    background-color: #eee;
-  }
-
-  header #main-menu .menu-content .kadan a:hover {
-    text-decoration: none;
-  } 
-
-  header #main-menu .menu-content .kadan a img {
-    display: block;
-  }
 
 
   .main-pic {
@@ -3756,115 +3245,684 @@ footer .copy span {
  }
 
 
+  footer {
+    width: 100%;
+    height: 45px;
+    background-color:#000055;
+    padding-top: 18px;
+    position: relative;
+  }
+
+  footer .outer {
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .container {
+    height: 20px;
+    display: flex;
+    position: static;
+    margin-top: 5px;
+  }
+
+  footer .container {
+    /* padding-bottom: 0px; */
+    display: flex;
+  }
+
+  footer .container li {
+    width: auto;
+    list-style: none;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    border-right: 1px solid #fff;
+  }
+  /* footer .container li {
+    width: auto;
+    list-style: none;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    border-right: 1px solid #fff;
+    background-color: thistle;
+  } */
+
+  footer .container li:last-child {
+    border-right: 1px solid transparent;
+  }
+
+  footer .container li a {
+    text-decoration: underline;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0px 12px;
+  }
+
+  footer .container > li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 
 
-footer {
-  width: 100%;
-  height: 45px;
-  background-color:#000055;
-  padding-top: 18px;
-  position: relative;
-}
+  /* footer .container > div {
+    width: auto;
+    height: 12px;
+    border-right: 1px solid #fff;
+  }
 
-footer .outer {
-  width: 990px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
+  footer .container > div a {
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    margin: 11px ;
+  }
 
-footer .container {
-  height: 20px;
-  display: flex;
-  position: static;
-  margin-top: 5px;
-}
+  footer .container > div a:hover {
+    cursor: pointer;
+    text-decoration: none;
+  } */
 
-footer .container {
-  /* padding-bottom: 0px; */
-  display: flex;
-}
+  /* footer .copy {
+    position: absolute;
+    bottom: -4px;
+    right: 0px;
+  }
 
-footer .container li {
-  width: auto;
-  list-style: none;
-  padding-bottom: 0px;
-  box-sizing: border-box;
-  border-right: 1px solid #fff;
-}
-/* footer .container li {
-  width: auto;
-  list-style: none;
-  padding-bottom: 0px;
-  box-sizing: border-box;
-  border-right: 1px solid #fff;
-  background-color: thistle;
-} */
+  footer .copy span {
+    font-size: 11px;
+    color: #fff;
+  } */
 
-footer .container li:last-child {
-  border-right: 1px solid transparent;
-}
+  footer .copy {
+    display: block;
+    padding: 0;
+    height: 20px;
+    width: auto;
+    position: static;
+    margin: 0px;
+  } 
 
-footer .container li a {
-  text-decoration: underline;
-  font-size: 12px;
-  color: #fff;
-  font-weight: 400;
-  margin: 0px 12px;
-}
-
-footer .container > li a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-
-/* footer .container > div {
-  width: auto;
-  height: 12px;
-  border-right: 1px solid #fff;
-}
-
-footer .container > div a {
-  text-decoration: underline;
-  font-size: 12px;
-  font-weight: 400;
-  color: #fff;
-  margin: 11px ;
-}
-
-footer .container > div a:hover {
-  cursor: pointer;
-  text-decoration: none;
-} */
-
-/* footer .copy {
-  position: absolute;
-  bottom: -4px;
-  right: 0px;
-}
-
-footer .copy span {
-  font-size: 11px;
-  color: #fff;
-} */
-
-footer .copy {
-  display: block;
-  padding: 0;
-  height: 20px;
-  width: auto;
-  position: static;
-  margin: 0px;
-} 
-
-footer .copy span {
-  display: block;
-  font-size: 11px;
-  line-height: 20px;
-  padding: 0;
-  color: #fff;
-}
+  footer .copy span {
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0;
+    color: #fff;
+  }
 
 }
 
+
+@media screen and (min-width: 721px)  {
+
+  header #main-menu {
+    display: none;
+  }
+
+  header #main-menu-2 {
+    display: block;
+    height: 52px;
+    width: 100%;
+    position: relative;
+  }
+  
+  header #main-menu-2 .container1 {
+    width: min(100%, 990px);
+    margin: 0 auto;
+    background-color: rgb(4, 4, 86);
+  }
+  
+  header #main-menu-2 .container1 .items {
+    list-style: none;
+    display: flex;
+  }
+
+  header #main-menu-2 .container1 .item {
+    width: 33.3%;
+    height: 52px;
+  }
+  
+  header #main-menu-2 .container1 .item {
+    display: flex;
+    align-items: center;
+  }
+  
+  header #main-menu-2 .container1 .item:nth-child(2)::before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #6e6c95;
+  }
+  header #main-menu-2 .container1 .item:nth-child(3)::before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #6e6c95;
+  }
+
+  header #main-menu-2 #pc1 #rainyuin1 {
+    width: 33.3%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+  }
+  header #main-menu-2 #pc2 #keiougijuku-ni1 {
+    width: 33.3%;
+    position: absolute;
+    top: 0;
+    left: 33.3%;
+  }
+  header #main-menu-2 #pc3 #iryoukankei1 {
+    width: 33.3%;
+    position: absolute;
+    top: 0;
+    left: 66.6%;
+  }
+
+  header #main-menu-2 .container2 .item {
+    width: 33.3%;
+    height: 52px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  header #main-menu-2 .container2 .item a {
+    display: inline-block;
+    width: 100%;
+    height: 52px;
+    color: #fff;
+    line-height: 52px;
+    padding: 0px;
+    text-decoration: none;
+  }
+
+  header #main-menu-2 .container2 .item a.on {
+    cursor: pointer;
+    background-color: red;
+  }
+
+  header #main-menu-2 .container2 .item a p:first-child {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  header #main-menu-2 .container2 #rainyuin1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  header #main-menu-2 .container2 #rainyuin1 {
+    position: absolute;
+    top: 0;
+    left: 33.3%;
+  }
+  header #main-menu-2 .container2 #rainyuin1 {
+    position: absolute;
+    top: 0;
+    left: 66.6%;
+  }
+
+  header #main-menu-2 .container2 .menu-content {
+    position: fixed;
+    top: 190px;
+    bottom: auto;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s;
+    box-shadow: 1px 2px 4px rgb(0 0 0 / 30%);
+    z-index: 30;
+  }
+
+  header #main-menu-2 .menu-content .joudan .part {
+    padding: 20px;
+  }
+  
+  header #main-menu-2 #rainyuin2 {
+    transition: opacity 0.5s;
+  }
+  
+  header #main-menu-2 #rainyuin2.show {
+    position: absolute;
+    top: 52px; 
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    pointer-events: auto;
+    background: #fff;
+    z-index: 30;
+  }
+  header #main-menu-2 #rainyuin2 .joudan {
+    display: flex;
+  }
+  header #main-menu-2 #rainyuin2 .joudan .part {
+    width: 33%;
+  }
+
+  header #main-menu-2 #keiougijuku-ni2.show {
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    pointer-events: auto;
+    background-color: #fff;
+    z-index: 30;
+  }
+  header #main-menu-2 #keiougijuku-ni2 .joudan {
+    display: flex;
+  }
+  header #main-menu-2 #keiougijuku-ni2 .joudan .part {
+    width: 33%;
+  }
+  
+  header #main-menu-2 #iryoukankei2.show {
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    pointer-events: auto;
+    background-color: #fff;
+    z-index: 30;
+  }
+  header #main-menu-2 #iryoukankei2 .joudan {
+    display:flex;
+  }
+  header #main-menu-2 #iryoukankei2 .joudan .part {
+    width: 33%;
+  }
+
+  header #main-menu-2 .menu-content .joudan h3 {
+    padding-left: 10px;
+    display: inline-block;
+    height: 50px;
+    font-size: 23px;
+    font-weight: 200;
+    line-height: 50px;
+  }
+
+  header #main-menu-2 .menu-content .joudan ul a {
+    text-decoration: underline;
+    color: #245dc1;
+  }
+
+  header #main-menu-2 .menu-content .joudan ul a:hover {
+    text-decoration: none;
+  }
+  
+  header #main-menu-2 .menu-content .joudan ul a li {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 5px;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    color: #245dc1;
+    border: 1px solid transparent;
+    position: relative;
+  }
+  
+  header #main-menu-2 .menu-content .joudan ul a li p {
+    line-height: 1.8;
+  }
+
+  header #main-menu-2 .menu-content .joudan ul a li .fas {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    color: #999;
+    display: none;
+  }
+
+  header #main-menu-2 .menu-content .kadan {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #eee;
+    position: relative;
+  }
+  
+  header #main-menu-2 .menu-content .kadan a {
+    width: 100%;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #245dc1;
+    line-height: 50px;
+    height: 50px;
+  }
+
+  header #main-menu-2 .menu-content .kadan a:hover {
+    text-decoration: none;
+  } 
+
+  header #main-menu-2 .menu-content .kadan a img {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+  }    
+}
+
+
+@media screen and (min-width: 1001px) {
+
+  h1 {
+    color: blue;
+  }
+
+  header #main-menu {
+    display: none;
+  }
+
+
+  header #main-menu-2 {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  
+  header #main-menu-2 .container1 {
+    height: 52px;
+    width: 100%;
+    background-color: rgb(4, 4, 86);
+  }
+  
+  header #main-menu-2 .container1 .items { 
+    height: auto;
+    width: 990px;
+    margin: 0 auto;
+    list-style: none;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  header #main-menu-2 .container1 .items::after {
+    display: block;
+    margin-top: 15px;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #6e6c95;
+  }
+  
+  header #main-menu-2 .container1 .item {
+    width: 330px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  header #main-menu-2 .container1 .item:nth-child(1)::before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #6e6c95;
+    display: flex;
+    align-items: center;
+  }
+  header #main-menu-2 .container1 .item:nth-child(2)::before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #6e6c95;
+  }
+  header #main-menu-2 .container1 .item:nth-child(3)::before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #6e6c95;
+  }
+  header #main-menu-2 .container1 .item:last-child::after {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #6e6c95;
+  } 
+
+  header #main-menu-2 .container2 {
+    margin-top: 10px;
+    width: 990px;
+    height: auto;
+    background-color: transparent;
+    opacity: 1;
+    position: absolute;
+    top: -10px;
+    left: calc((100% - 990px) / 2);
+  }
+
+  header #main-menu-2 .container2 .item {
+    width: 330px;
+    height: 52px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  header #main-menu-2 #pc1 #rainyuin1 {
+    display: inline-block;
+    width: 330px;
+    position: absolute;
+    top: 0;
+    left: calc(((100% - 990px) / 2) + 0px);
+  }
+
+  header #main-menu-2 #pc2 #keiougijuku-ni1 {
+    display: inline-block;
+    width: 330px;
+    position: absolute;
+    top: 0;
+    left: calc(((100% - 990px) / 2) + 330px);
+  }
+
+  header #main-menu-2 #pc3 #iryoukankei1 {
+    display: inline-block;
+    width: 330px;
+    position: absolute;
+    top: 0;
+    left: calc(((100% - 990px) / 2) + 660px);
+    text-align: center;
+  }
+
+   header #main-menu-2 #pc1 #rainyuin1 {
+    display: inline-block;
+    width: 330px;
+    height: 52px;
+    line-height: 52px;
+    text-decoration: none;
+  }  
+  header #main-menu-2 #pc1 #rainyuin1.on {
+    cursor: pointer;
+    background-color: red;
+  }
+
+  header #main-menu-2 #pc2 #keiougijuku-ni1 {
+    display: inline-block;
+    width: 330px;
+    height: 52px;
+    line-height: 52px;
+    text-decoration: none;
+  }  
+  header #main-menu-2 #pc2 #keiougijuku-ni1.on {
+    cursor: pointer;
+    background-color: red;
+  }
+
+  header #main-menu-2 #pc3 #iryoukankei1 {
+    display: inline-block;
+    width: 330px;
+    height: 52px;
+    line-height: 52px;
+    text-decoration: none;
+  }  
+  header #main-menu-2 #pc3 #iryoukankei1.on {
+    cursor: pointer;
+    background-color: red;
+  }
+
+  header #main-menu-2 .container2 .item a p:first-child {
+    display: inline-block;
+    width: 330px;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  header #main-menu-2 .menu-content {
+    display: block;
+    position: fixed;
+    top: 190px;
+    bottom: auto;
+    left: calc((100% - 990px) / 2);
+    right: auto;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity .5s;
+    box-shadow: 1px 2px 4px rgb(0 0 0 / 30%);
+    z-index: 30;
+  }
+
+
+  header #main-menu-2 .container2 #rainyuin2 {
+    width: 990px;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+  }
+  header #main-menu-2 .container2 #keiougijuku-ni2 {
+    width: 990px;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+  }
+  header #main-menu-2 .container2 #iryoukankei2 {
+    width: 990px;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+  }
+
+  header #main-menu-2 .container2 #rainyuin2.show {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    opacity: 1;
+  }
+  header #main-menu-2 .container2 #keiougijuku-ni2.show {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    opacity: 1;
+  }
+  header #main-menu-2 .container2 #iryoukankei2.show {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    opacity: 1;
+  }
+  
+  header #main-menu-2 .menu-content .menu-content .joudan {
+    width: 990px;
+    background-color: #fff;
+  }
+  
+  header #main-menu-2 .container2 .menu-content .joudan {
+    display: flex;
+  } 
+  
+  header #main-menu-2 .container2 .menu-content .joudan .part {
+    display: block;
+    width: 330px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  header #main-menu-2 .menu-content .joudan h3 {
+    padding-left: 30px;
+    display: inline-block;
+    height: 50px;
+    font-size: 23px;
+    font-weight: 200;
+    line-height: 50px;
+  }
+  
+  header #main-menu-2 .menu-content .joudan ul a {
+    text-decoration: underline;
+  }
+  header #main-menu-2 .menu-content .joudan ul a:hover {
+    text-decoration: none;
+  }
+  
+  header #main-menu-2 .menu-content .joudan ul li {
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 5px;
+    height: 25px;
+    line-height: 25px;
+    color: #245dc1;
+    position: relative;
+  }
+  
+  header #main-menu-2 .menu-content .joudan ul li .fas {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    color: #999;
+    display: none;
+  }
+  
+  header #main-menu-2 .menu-content .kadan {
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 990px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #ddd;
+    position: relative; 
+    background-color: #eee;
+  }
+  
+  header #main-menu-2 .menu-content .kadan a:first-child {
+    font-size: 16px;
+    color: #245dc1;
+  }
+  
+  header #main-menu-2 .menu-content .kadan a:hover {
+    text-decoration: none;
+  } 
+  
+  header #main-menu-2 .menu-content .kadan a img {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  } 
+ 
+}  
